@@ -1,0 +1,26 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*HEADER MOBILE*/
+.bloc1_heading {
+    display: flex;
+    justify-content: center; 
+    font-family: "Shrikhand", cursive; 
+}
+.bloc1_loca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    font-weight: bold;
+    background-color: lightgrey;
+    .bloc1_icone {
+        padding-right: 15px;
+    }
+}
+.bloc1_pres {
+    display: flex;
+    justify-content: center;
+}
