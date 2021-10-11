@@ -59,7 +59,7 @@ body {
     margin-top: -30px;
   }
   .bloc1_pres .bloc1_button {
-    margin: 0 80px 0 80px;
+    margin: 0 100px 0 100px;
     font-size: 15px;
     color: white;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356DC));
@@ -70,7 +70,7 @@ body {
     margin-bottom: 30px;
   }
   .bloc1_pres .bloc1_button .bloc1_button:hover {
-    /*inserer qqch ici ?*/
+    /*hover qui fonctionne pas*/
   }
   .bloc2 h2 {
     font-weight: bolder;
@@ -150,6 +150,95 @@ body {
     margin-right: 2px;
     padding: 0 15px 0 15px;
     font-size: 17px;
+  }
+  .bloc3 {
+    background-color: #F6F6F6;
+  }
+  .bloc3 .bloc3_cartes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bloc3 .bloc3_cartes .bloc3_carte {
+    background-color: white;
+    width: 21rem;
+    height: 15rem;
+    border-radius: 1rem 1rem;
+    -webkit-box-shadow: 0 0 16px #0000002e;
+            box-shadow: 0 0 16px #0000002e;
+    margin-top: 20px;
+  }
+  .bloc3 .bloc3_cartes .bloc3_carte a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+  }
+  .bloc3 .bloc3_cartes .bloc3_carte p {
+    margin-top: -15px;
+  }
+  .bloc3 .bloc3_cartes .bloc3_carte img {
+    height: 10rem;
+    width: 21rem;
+    border-radius: 1rem 1rem 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .bloc3 .bloc3_cartes .bloc3_descresto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bloc3 .bloc3_cartes .bloc3_blocdesc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .bloc3 .bloc3_cartes .bloc3_button {
+    font-size: 25px;
+    padding: 20px 20px 80px 20px;
+  }
+  footer {
+    background-color: #404040;
+  }
+  footer h2 {
+    font-family: "Shrikhand", cursive;
+    color: white;
+    font-weight: lighter;
+  }
+  .bloc4_footer {
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
   }
 }
 /*# sourceMappingURL=style.css.map */
