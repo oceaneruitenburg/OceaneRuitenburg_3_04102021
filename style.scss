@@ -3,7 +3,7 @@ body {
 
 }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 740px) {
 /*HEADER MOBILE*/
 .bloc1_heading {
     display: flex;
@@ -33,7 +33,7 @@ body {
         font-size: 16px;
         padding-left: 60px;
         padding-right: 60px;
-        font-weight: bold;
+        font-weight: bolder;
     }
     .bloc1_pres2 {
         font-size: 20px;
@@ -50,23 +50,76 @@ body {
         border: none;
         padding: 10px 0 10px 0;
         margin-bottom: 30px;
+        .bloc1_button:hover {
+            /*inserer qqch ici ?*/
+        }
     }
+}
+.bloc2 h2 {
+    font-weight: bolder;
 }
 .bloc2_buttons {
     display: flex;
     flex-direction: column;
-    background: color #f6f6f6; 
-    .numbers {
+    .numbers_1 {
         background-color: #9356DC;
         color: white;
-        margin-right: 80px;
+        border-radius: 100%;
+        padding: 2px 6px 2px 6px;
+        margin-left: -90px;
+        margin-right: 6px;
+        font-size: 12.5px;
     }
-    .bloc2_buttonicon {
+    .numbers_2 {
+        background-color: #9356DC;
+        color: white;
+        border-radius: 100%;
+        padding: 2px 6px 2px 6px;
+        margin-left: -112px;
+        margin-right: 6px;
+        font-size: 12.5px;
+    }
+    .numbers_3 {
+        background-color: #9356DC;
+        color: white;
+        border-radius: 100%;
+        padding: 2px 6px 2px 6px;
+        margin-left: -103px;
+        font-size: 12.5px;
+    }
+    .bloc2_button {
+        padding: 25px 0px 25px 0px;
+        margin: 10px 30px 10px 30px;
+        display: flex;
+        font-size: 15px;
+        flex-direction: row;
+        justify-content: center;
+        border: none;
+        border-radius: 15px;
+        background-color: #F6F6F6;
+        box-shadow: 0 0 16px #0000002e
+    }
+    .bloc2_button:hover {
+        background-color: #F5EDFF;
+    }
+
+    .bloc2_buttonicon1 {
         color: #7C7C7C;
+        margin-right: 10px;
+        padding: 0 15px 0 10px;
+        font-size: 17px;
     }
-    .bloc2_button1 {
-        padding: 10px 0 10px 0;
-        margin: 0 80px 0 80px;
+    .bloc2_buttonicon2 {
+        color: #7C7C7C;
+        margin-right: 10px;
+        padding: 0 8px 0 10px;
+        font-size: 17px;
+    }
+    .bloc2_buttonicon3 {
+        color: #7C7C7C;
+        margin-right: 2px;
+        padding: 0 15px 0 15px;
+        font-size: 17px;
     }
 }
 
