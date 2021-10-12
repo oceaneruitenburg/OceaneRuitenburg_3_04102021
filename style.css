@@ -14,8 +14,8 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     font-family: "Shrikhand", cursive;
-    -webkit-box-shadow: 16px #0000002e;
-            box-shadow: 16px #0000002e;
+    /*border: 1px solid red; 
+    box-shadow: 5px 5px 5px red ;*/
   }
   .bloc1_loca {
     display: -webkit-box;
@@ -78,6 +78,7 @@ body {
 
 .bloc2 h2 {
   font-weight: bolder;
+  margin-left: 20px;
 }
 
 .bloc2_buttons {
@@ -168,6 +169,7 @@ body {
 .bloc3 {
   background-color: #F6F6F6;
   padding-bottom: 60px;
+  padding-top: 15px;
 }
 
 .bloc3 .bloc3_cartes {
@@ -247,6 +249,8 @@ body {
 
 .bloc3 h2 {
   /*rendre plus gras*/
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 footer {
