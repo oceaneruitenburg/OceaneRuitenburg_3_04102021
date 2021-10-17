@@ -1,10 +1,10 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: auto;
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 740px) {
+@media only screen and (min-width: 0px) {
   /*HEADER MOBILE*/
   .bloc1_heading {
     display: -webkit-box;
@@ -14,8 +14,11 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     font-family: "Shrikhand", cursive;
-    /*border: 1px solid red; 
-    box-shadow: 5px 5px 5px red ;*/
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 3px;
+    -webkit-box-shadow: 0px 3px 5px #0000002e;
+            box-shadow: 0px 3px 5px #0000002e;
   }
   .bloc1_loca {
     display: -webkit-box;
@@ -27,10 +30,9 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    /*margin-right: 40px;*/
     font-weight: bolder;
     color: #404040;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
   }
   .bloc1_loca .bloc1_icone {
     padding-right: 30px;
@@ -47,7 +49,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
   }
   .bloc1_pres .bloc1_pres1 {
     font-size: 16px;
@@ -61,238 +63,249 @@ body {
     color: #404040;
     margin-top: -30px;
   }
+  .bloc1_pres .bloc1_pres2 p {
+    font-weight: normal;
+  }
   .bloc1_pres .bloc1_button {
-    margin: 0 100px 0 100px;
+    margin: 0 80px 0 80px;
     font-size: 15px;
     color: white;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356DC));
-    background-image: linear-gradient(#ff79da, #9356DC);
-    -webkit-box-shadow: 1px 0 8px  darkgray;
-            box-shadow: 1px 0 8px  darkgray;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+    background-image: linear-gradient(#ff79da, #9356dc);
+    -webkit-box-shadow: 1px 0 8px darkgray;
+            box-shadow: 1px 0 8px darkgray;
     border-radius: 25px;
     border: none;
-    padding: 10px 0 10px 0;
+    font-weight: bold;
+    padding: 15px 0 15px 0;
     margin-bottom: 30px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
   }
-}
-
-.bloc2 h2 {
-  font-weight: bolder;
-  margin-left: 20px;
-}
-
-.bloc2_buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.bloc2_buttons .numbers_1 {
-  background-color: #9356DC;
-  color: white;
-  border-radius: 100%;
-  padding: 2px 6px 2px 6px;
-  margin-left: -90px;
-  margin-right: 6px;
-  font-size: 12.5px;
-}
-
-.bloc2_buttons .numbers_2 {
-  background-color: #9356DC;
-  color: white;
-  border-radius: 100%;
-  padding: 2px 6px 2px 6px;
-  margin-left: -112px;
-  margin-right: 6px;
-  font-size: 12.5px;
-}
-
-.bloc2_buttons .numbers_3 {
-  background-color: #9356DC;
-  color: white;
-  border-radius: 100%;
-  padding: 2px 6px 2px 6px;
-  margin-left: -103px;
-  font-size: 12.5px;
-}
-
-.bloc2_buttons .bloc2_button {
-  padding: 25px 0px 25px 0px;
-  margin: 10px 30px 10px 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 15px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: none;
-  border-radius: 15px;
-  background-color: #F6F6F6;
-  -webkit-box-shadow: 0 0 16px #0000002e;
-          box-shadow: 0 0 16px #0000002e;
-}
-
-.bloc2_buttons .bloc2_button:hover {
-  background-color: #F5EDFF;
-}
-
-.bloc2_buttons .bloc2_buttonicon1 {
-  color: #7C7C7C;
-  margin-right: 10px;
-  padding: 0 15px 0 10px;
-  font-size: 17px;
-}
-
-.bloc2_buttons .bloc2_buttonicon2 {
-  color: #7C7C7C;
-  margin-right: 10px;
-  padding: 0 8px 0 10px;
-  font-size: 17px;
-}
-
-.bloc2_buttons .bloc2_buttonicon3 {
-  color: #7C7C7C;
-  margin-right: 2px;
-  padding: 0 15px 0 15px;
-  font-size: 17px;
-}
-
-.bloc3 {
-  background-color: #F6F6F6;
-  padding-bottom: 60px;
-  padding-top: 15px;
-}
-
-.bloc3 .bloc3_cartes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.bloc3 .bloc3_cartes .bloc3_carte {
-  background-color: white;
-  width: 21rem;
-  height: 15rem;
-  border-radius: 1rem 1rem;
-  -webkit-box-shadow: 0 0 16px #0000002e;
-          box-shadow: 0 0 16px #0000002e;
-  margin-top: 20px;
-}
-
-.bloc3 .bloc3_cartes .bloc3_carte a {
-  text-decoration: none;
-  color: black;
-  font-weight: bolder;
-}
-
-.bloc3 .bloc3_cartes .bloc3_carte p {
-  margin-top: -15px;
-}
-
-.bloc3 .bloc3_cartes .bloc3_carte img {
-  height: 10rem;
-  width: 21rem;
-  border-radius: 1rem 1rem 0 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.bloc3 .bloc3_cartes .bloc3_descresto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.bloc3 .bloc3_cartes .bloc3_blocdesc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-left: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.bloc3 .bloc3_cartes .bloc3_button {
-  font-size: 25px;
-  padding: 20px 20px 80px 20px;
-}
-
-.bloc3 h2 {
-  /*rendre plus gras*/
-  margin-bottom: 10px;
-  margin-left: 20px;
-}
-
-footer {
-  background-color: #404040;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-footer h2 {
-  font-family: "Shrikhand", cursive;
-  color: white;
-  font-weight: lighter;
-  margin-left: 40px;
-  margin-bottom: -15px;
-}
-
-.bloc4_footer {
-  list-style: none;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  padding-bottom: 20px;
-}
-
-.bloc4_footer li {
-  margin-top: 10px;
-}
-
-.iconesli {
-  margin-right: 10px;
-}
-
-footer a {
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
+  .bloc1_pres .bloc1_button:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .bloc2 h2 {
+    font-weight: bolder;
+    margin-left: 20px;
+  }
+  .bloc2_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 40px;
+  }
+  .bloc2_buttons .numbers_1 {
+    background-color: #9356dc;
+    color: white;
+    border-radius: 100%;
+    padding: 2px 6px 2px 6px;
+    margin-left: -90px;
+    margin-right: 6px;
+    font-size: 12.5px;
+  }
+  .bloc2_buttons .numbers_2 {
+    background-color: #9356dc;
+    color: white;
+    border-radius: 100%;
+    padding: 2px 6px 2px 6px;
+    margin-left: -112px;
+    margin-right: 6px;
+    font-size: 12.5px;
+  }
+  .bloc2_buttons .numbers_3 {
+    background-color: #9356dc;
+    color: white;
+    border-radius: 100%;
+    padding: 2px 6px 2px 6px;
+    margin-left: -103px;
+    font-size: 12.5px;
+  }
+  .bloc2_buttons .bloc2_button {
+    padding: 25px 0px 25px 0px;
+    margin: 10px 30px 10px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: none;
+    border-radius: 15px;
+    background-color: #f6f6f6;
+    -webkit-box-shadow: 0 0 16px #0000002e;
+            box-shadow: 0 0 16px #0000002e;
+  }
+  .bloc2_buttons .bloc2_button:hover {
+    background-color: #f5edff;
+    color: black;
+  }
+  .bloc2_buttons .bloc2_buttonicon1 {
+    color: #7c7c7c;
+    margin-right: 10px;
+    padding: 0 15px 0 10px;
+    font-size: 17px;
+  }
+  .bloc2_buttons .bloc2_buttonicon1:hover {
+    color: #9356dc;
+  }
+  .bloc2_buttons .bloc2_buttonicon2 {
+    color: #7c7c7c;
+    margin-right: 10px;
+    padding: 0 8px 0 10px;
+    font-size: 17px;
+  }
+  .bloc2_buttons .bloc2_buttonicon3 {
+    color: #7c7c7c;
+    margin-right: 2px;
+    padding: 0 15px 0 15px;
+    font-size: 17px;
+  }
+  .bloc3 {
+    background-color: #f6f6f6;
+    padding-bottom: 60px;
+    padding-top: 15px;
+  }
+  .bloc3 .bloc3_badge {
+    position: absolute;
+    right: 33px;
+    margin-top: 30px;
+  }
+  .bloc3 .bloc3_badge p {
+    background-color: #99e2d0;
+    font-weight: bolder;
+    color: #1b6150;
+    padding: 10px;
+    border-radius: 5%;
+  }
+  .bloc3 .bloc3_cartes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bloc3 .bloc3_cartes .bloc3_carte {
+    border-radius: 1rem;
+    width: 21rem;
+    background-color: white;
+    -webkit-box-shadow: 0 0 16px #d2d2d2;
+            box-shadow: 0 0 16px #d2d2d2;
+    margin-top: 2rem;
+  }
+  .bloc3 .bloc3_cartes .bloc3_carte a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+  }
+  .bloc3 .bloc3_cartes .bloc3_carte p {
+    margin-top: -15px;
+    font-weight: normal;
+  }
+  .bloc3 .bloc3_cartes .bloc3_carte img {
+    height: 10rem;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .bloc3 .bloc3_cartes .bloc3_descresto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bloc3 .bloc3_cartes .bloc3_blocdesc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: -50px;
+    margin-top: -10px;
+    padding-top: 5px;
+  }
+  .bloc3 .bloc3_cartes .bloc3_button {
+    font-size: 25px;
+    padding: 20px 20px 80px 0px;
+    cursor: pointer;
+  }
+  .bloc3 .bloc3_cartes .bloc3_button:hover {
+    color: #9356dc;
+  }
+  .bloc3 h2 {
+    /*rendre plus gras*/
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  footer {
+    background-color: #404040;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  footer h2 {
+    font-family: "Shrikhand", cursive;
+    color: white;
+    font-weight: lighter;
+    margin-left: 40px;
+    margin-bottom: -15px;
+  }
+  .bloc4_footer {
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 20px;
+  }
+  .bloc4_footer li {
+    margin-top: 10px;
+  }
+  .iconesli {
+    margin-right: 10px;
+  }
+  footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+  }
 }
 /*# sourceMappingURL=style.css.map */
