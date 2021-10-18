@@ -70,8 +70,8 @@ body {
     margin: 0 80px 0 80px;
     font-size: 15px;
     color: white;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-    background-image: linear-gradient(#ff79da, #9356dc);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+    background: linear-gradient(#ff79da, #9356dc);
     -webkit-box-shadow: 1px 0 8px darkgray;
             box-shadow: 1px 0 8px darkgray;
     border-radius: 25px;
@@ -80,12 +80,20 @@ body {
     padding: 15px 0 15px 0;
     margin-bottom: 30px;
     cursor: pointer;
-    -webkit-transition-duration: 0.25s;
-            transition-duration: 0.25s;
+    -webkit-transition-duration: 400ms;
+            transition-duration: 400ms;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
   }
   .bloc1_pres .bloc1_button:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.12);
+            transform: scale(1.12);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff8de0), to(#9e67e0));
+    background: linear-gradient(#ff8de0, #9e67e0);
+    -webkit-box-shadow: 1px 0 8px black;
+            box-shadow: 1px 0 8px black;
   }
   .bloc2 h2 {
     font-weight: bolder;
@@ -253,20 +261,36 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: -50px;
+    margin-bottom: -25px;
     margin-top: -10px;
     padding-top: 5px;
   }
   .bloc3 .bloc3_cartes .bloc3_button {
     font-size: 25px;
     padding: 20px 20px 80px 0px;
+    -webkit-transition: all 450ms;
+    transition: all 450ms;
+  }
+  .bloc3 .bloc3_cartes .fa-stack-1x, .bloc3 .bloc3_cartes .fa-stack-2x {
+    width: inherit;
+    margin-left: 19rem;
     cursor: pointer;
   }
-  .bloc3 .bloc3_cartes .bloc3_button:hover {
-    color: #9356dc;
+  .bloc3 .bloc3_cartes .bloc3_filledbtn {
+    color: transparent;
+    -webkit-transition-duration: all 1s;
+            transition-duration: all 1s;
+  }
+  .bloc3 .bloc3_cartes .bloc3_filledbtn:hover {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+    background-image: linear-gradient(#9356dc, #ff79da);
+    -webkit-transform: scale(1.12);
+            transform: scale(1.12);
   }
   .bloc3 h2 {
-    /*rendre plus gras*/
     margin-bottom: 10px;
     margin-left: 20px;
   }

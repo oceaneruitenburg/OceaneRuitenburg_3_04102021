@@ -1,5 +1,6 @@
 $periwinkle: #9356dc;
 $darkgrey: #404040;
+$pinky:#ff79da;
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
@@ -55,7 +56,7 @@ body {
       margin: 0 80px 0 80px;
       font-size: 15px;
       color: white;
-      background-image: linear-gradient(#ff79da, $periwinkle);
+      background: linear-gradient($pinky, $periwinkle);
       box-shadow: 1px 0 8px darkgray;
       border-radius: 25px;
       border: none;
@@ -63,10 +64,16 @@ body {
       padding: 15px 0 15px 0;
       margin-bottom: 30px;
       cursor: pointer;
-      transition-duration: 0.25s;
+      transition-duration: 400ms;
+      transition-property: transform;
     }
     .bloc1_button:hover {
-      transform: scale(1.1);
+      transform: scale(1.12);
+      background: linear-gradient(
+      lighten($pinky, 4%),
+      lighten($periwinkle, 4%),
+      );
+      box-shadow: 1px 0 8px black;
     }
     
   }
@@ -207,22 +214,44 @@ body {
         flex-direction: row;
         margin-left: 20px;
         justify-content: space-between;
-        margin-bottom: -50px;
+        margin-bottom: -25px;
         margin-top: -10px;
         padding-top: 5px;
       }
       .bloc3_button {
         font-size: 25px;
         padding: 20px 20px 80px 0px;
+        transition: all 450ms;
+      }
+      .fa-stack-1x, .fa-stack-2x {
+        width: inherit;
+        margin-left: 19rem;
         cursor: pointer;
       }
-      .bloc3_button:hover {
-        color: $periwinkle;   
+      .bloc3_hiddenbtn {
+       
       }
+      
+      
+
+      .bloc3_filledbtn {
+        color: transparent;
+        transition-duration: all 1s;
+      }
+      .bloc3_filledbtn:hover {
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: linear-gradient($periwinkle, $pinky);
+        transform:scale(1.12);
+        
+      }
+
+
+      
     }
   }
   .bloc3 h2 {
-    /*rendre plus gras*/
     margin-bottom: 10px;
     margin-left: 20px;
   }
