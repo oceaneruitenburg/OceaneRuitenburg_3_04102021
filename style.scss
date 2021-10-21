@@ -408,19 +408,8 @@ body {
       color: $periwinkle;
     }
 
-    .bloc2_buttonicon2 {
-      color: #7c7c7c;
-      margin-right: 10px;
-      padding: 0 8px 0 10px;
-      font-size: 17px;
-    }
-
-    .bloc2_buttonicon3 {
-      color: #7c7c7c;
-      margin-right: 2px;
-      padding: 0 15px 0 15px;
-      font-size: 17px;
-    }
+    
+   
   }
 
   .bloc3 {
@@ -444,86 +433,6 @@ body {
       display: grid;
       grid-template-columns:repeat(2,1fr);
       row-gap: 20px;
-
-      .bloc3_carte {
-        border-radius: 1rem;
-        width: 21rem;
-        background-color: white;
-        box-shadow: 0 0 16px #d2d2d2;
-        margin-top: 2rem;
-      }
-      .bloc3_carte a {
-        text-decoration: none;
-        color: black;
-        font-weight: bolder;
-      }
-
-      .bloc3_carte p {
-        margin-top: -15px;
-        font-weight: normal;
-      }
-
-      .bloc3_carte img {
-        height: 10rem;
-        width: 100%;
-        object-fit: cover;
-        box-shadow: none;
-        display: flex;
-        align-content: center;
-        border-radius: 1rem 1rem 0 0;
-      }
-      .bloc3_descresto {
-        display: flex;
-        flex-direction: column;
-      }
-      .bloc3_blocdesc {
-        display: flex;
-        flex-direction: row;
-        margin-left: 20px;
-        justify-content: space-between;
-        margin-bottom: -25px;
-        margin-top: -10px;
-        padding-top: 5px;
-      }
-      .bloc3_button {
-        font-size: 25px;
-        padding: 20px 20px 80px 0px;
-        /*position: inherit;*/
-      }
-      .fa-stack-1x,
-      .fa-stack-2x {
-        width: inherit;
-        margin-left: 19rem;
-        cursor: pointer;
-      }
-
-      .bloc3_filledbtn {
-        color: transparent;
-      }
-      .bloc3_filledbtn:hover {
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        background-image: linear-gradient($periwinkle, $pinky);
-        transition-duration: 1s;
-        transform: scale(1.12);
-        animation: fadein 1s;
-
-        @keyframes fadein {
-          from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
-        }
-      }
     }
-  }
-  .bloc3 h2 {
-    margin-bottom: 10px;
-    margin-left: 20px;
-  }
-
-
-}
+  } 
+}    
