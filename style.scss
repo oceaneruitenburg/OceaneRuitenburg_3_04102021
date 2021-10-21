@@ -7,343 +7,312 @@ body {
   margin: auto;
 }
 
-  /*HEADER MOBILE*/
-  .bloc1_heading {
-    display: flex;
-    justify-content: center;
-    font-family: "Shrikhand", cursive;
-    font-weight: normal;
-    font-size: 15px;
-    margin-bottom: 3px;
-    box-shadow: 0px 3px 5px #0000002e;
+/*HEADER MOBILE*/
+.bloc1_heading {
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  font-size: 15px;
+  margin-bottom: 3px;
+  box-shadow: 0px 3px 5px #0000002e;
+}
+.bloc1_loca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  color: $darkgrey;
+  background-color: #eaeaea;
+  .bloc1_icone {
+    padding-right: 30px;
   }
-  .bloc1_loca {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.bloc1_pres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #f6f6f6;
+
+  .bloc1_pres1 {
+    font-size: 16px;
+    padding-left: 60px;
+    padding-right: 60px;
     font-weight: bolder;
-    color: $darkgrey;
-    background-color: #eaeaea;
-    .bloc1_icone {
-      padding-right: 30px;
-    }
   }
-  .bloc1_pres {
+
+  .bloc1_pres2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: $darkgrey;
+    margin-top: -30px;
+  }
+  .bloc1_pres2 p {
+    font-weight: normal;
+  }
+  .bloc1_button {
+    margin: 0 80px 0 80px;
+    font-size: 15px;
+    color: white;
+    background: linear-gradient($pinky, $periwinkle);
+    box-shadow: 1px 0 8px darkgray;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    padding: 15px 0 15px 0;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition-duration: 400ms;
+    transition-property: transform;
+  }
+  .bloc1_button:hover {
+    transform: scale(1.12);
+    background: linear-gradient(lighten($pinky, 4%), lighten($periwinkle, 4%));
+    box-shadow: 1px 0 8px black;
+  }
+}
+
+.bloc2 h2 {
+  font-weight: bolder;
+  margin-left: 20px;
+}
+.bloc2_buttons {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  .numbers_1 {
+    background-color: $periwinkle;
+    color: white;
+    border-radius: 100%;
+    padding: 2px 6px 2px 6px;
+    margin-left: -90px;
+    margin-right: 6px;
+    font-size: 12.5px;
+  }
+  .numbers_2 {
+    background-color: $periwinkle;
+    color: white;
+    border-radius: 100%;
+    padding: 2px 6px 2px 6px;
+    margin-left: -112px;
+    margin-right: 6px;
+    font-size: 12.5px;
+  }
+  .numbers_3 {
+    background-color: $periwinkle;
+    color: white;
+    border-radius: 100%;
+    padding: 2px 6px 2px 6px;
+    margin-left: -103px;
+    font-size: 12.5px;
+  }
+  .bloc2_button {
+    padding: 25px 0px 25px 0px;
+    margin: 10px 30px 10px 30px;
+    display: flex;
+    font-size: 15px;
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+    border-radius: 15px;
+    background-color: #f6f6f6;
+    box-shadow: 0 0 16px #0000002e;
+  }
+
+  .bloc2_button:hover {
+    background-color: #f5edff;
+    color: black;
+  }
+
+  .bloc2_buttonicon1 {
+    color: #7c7c7c;
+    margin-right: 10px;
+    padding: 0 15px 0 10px;
+    font-size: 17px;
+  }
+  .bloc2_buttonicon1:hover {
+    color: $periwinkle;
+  }
+
+  .bloc2_buttonicon2 {
+    color: #7c7c7c;
+    margin-right: 10px;
+    padding: 0 8px 0 10px;
+    font-size: 17px;
+  }
+
+  .bloc2_buttonicon3 {
+    color: #7c7c7c;
+    margin-right: 2px;
+    padding: 0 15px 0 15px;
+    font-size: 17px;
+  }
+}
+
+.bloc3 {
+  background-color: #f6f6f6;
+  padding-bottom: 60px;
+  padding-top: 15px;
+
+  .bloc3_badge {
+    position: absolute;
+    right: 33px;
+    margin-top: 30px;
+  }
+  .bloc3_badge p {
+    background-color: #99e2d0;
+    font-weight: bolder;
+    color: #1b6150;
+    padding: 10px;
+    border-radius: 5%;
+  }
+
+  .bloc3_cartes {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: #f6f6f6;
+    align-items: center;
 
-    .bloc1_pres1 {
-      font-size: 16px;
-      padding-left: 60px;
-      padding-right: 60px;
+    .bloc3_carte {
+      border-radius: 1rem;
+      width: 21rem;
+      background-color: white;
+      box-shadow: 0 0 16px #d2d2d2;
+      margin-top: 2rem;
+    }
+    .bloc3_carte a {
+      text-decoration: none;
+      color: black;
       font-weight: bolder;
     }
 
-    .bloc1_pres2 {
-      font-size: 20px;
-      font-weight: bold;
-      color: $darkgrey;
-      margin-top: -30px;
-    }
-    .bloc1_pres2 p {
+    .bloc3_carte p {
+      margin-top: -15px;
       font-weight: normal;
     }
-    .bloc1_button {
-      margin: 0 80px 0 80px;
-      font-size: 15px;
-      color: white;
-      background: linear-gradient($pinky, $periwinkle);
-      box-shadow: 1px 0 8px darkgray;
-      border-radius: 25px;
-      border: none;
-      font-weight: bold;
-      padding: 15px 0 15px 0;
-      margin-bottom: 30px;
-      cursor: pointer;
-      transition-duration: 400ms;
-      transition-property: transform;
-    }
-    .bloc1_button:hover {
-      transform: scale(1.12);
-      background: linear-gradient(
-        lighten($pinky, 4%),
-        lighten($periwinkle, 4%)
-      );
-      box-shadow: 1px 0 8px black;
-    }
-  }
 
-  .bloc2 h2 {
-    font-weight: bolder;
-    margin-left: 20px;
-  }
-  .bloc2_buttons {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px;
-    .numbers_1 {
-      background-color: $periwinkle;
-      color: white;
-      border-radius: 100%;
-      padding: 2px 6px 2px 6px;
-      margin-left: -90px;
-      margin-right: 6px;
-      font-size: 12.5px;
-    }
-    .numbers_2 {
-      background-color: $periwinkle;
-      color: white;
-      border-radius: 100%;
-      padding: 2px 6px 2px 6px;
-      margin-left: -112px;
-      margin-right: 6px;
-      font-size: 12.5px;
-    }
-    .numbers_3 {
-      background-color: $periwinkle;
-      color: white;
-      border-radius: 100%;
-      padding: 2px 6px 2px 6px;
-      margin-left: -103px;
-      font-size: 12.5px;
-    }
-    .bloc2_button {
-      padding: 25px 0px 25px 0px;
-      margin: 10px 30px 10px 30px;
+    .bloc3_carte img {
+      height: 10rem;
+      width: 100%;
+      object-fit: cover;
+      box-shadow: none;
       display: flex;
-      font-size: 15px;
-      flex-direction: row;
-      justify-content: center;
-      border: none;
-      border-radius: 15px;
-      background-color: #f6f6f6;
-      box-shadow: 0 0 16px #0000002e;
+      align-content: center;
+      border-radius: 1rem 1rem 0 0;
     }
-
-    .bloc2_button:hover {
-      background-color: #f5edff;
-      color: black;
-    }
-
-    .bloc2_buttonicon1 {
-      color: #7c7c7c;
-      margin-right: 10px;
-      padding: 0 15px 0 10px;
-      font-size: 17px;
-    }
-    .bloc2_buttonicon1:hover {
-      color: $periwinkle;
-    }
-
-    .bloc2_buttonicon2 {
-      color: #7c7c7c;
-      margin-right: 10px;
-      padding: 0 8px 0 10px;
-      font-size: 17px;
-    }
-
-    .bloc2_buttonicon3 {
-      color: #7c7c7c;
-      margin-right: 2px;
-      padding: 0 15px 0 15px;
-      font-size: 17px;
-    }
-  }
-
-  .bloc3 {
-    background-color: #f6f6f6;
-    padding-bottom: 60px;
-    padding-top: 15px;
-
-    .bloc3_badge {
-      position: absolute;
-      right: 33px;
-      margin-top: 30px;
-    }
-    .bloc3_badge p {
-      background-color: #99e2d0;
-      font-weight: bolder;
-      color: #1b6150;
-      padding: 10px;
-      border-radius: 5%;
-    }
-
-    .bloc3_cartes {
+    .bloc3_descresto {
       display: flex;
       flex-direction: column;
-      align-items: center;
+    }
+    .bloc3_blocdesc {
+      display: flex;
+      flex-direction: row;
+      margin-left: 20px;
+      justify-content: space-between;
+      margin-bottom: -25px;
+      margin-top: -10px;
+      padding-top: 5px;
+    }
+    .bloc3_button {
+      font-size: 25px;
+      padding: 20px 20px 80px 0px;
+      transition: all 450ms;
+    }
+    .fa-stack-1x,
+    .fa-stack-2x {
+      width: inherit;
+      margin-left: 19rem;
+      cursor: pointer;
+    }
 
-      .bloc3_carte {
-        border-radius: 1rem;
-        width: 21rem;
-        background-color: white;
-        box-shadow: 0 0 16px #d2d2d2;
-        margin-top: 2rem;
-      }
-      .bloc3_carte a {
-        text-decoration: none;
-        color: black;
-        font-weight: bolder;
-      }
+    .bloc3_filledbtn {
+      color: transparent;
+      transition-duration: all 1s;
+    }
+    .bloc3_filledbtn:hover {
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient($periwinkle, $pinky);
+      transition-duration: 1s;
+      transform: scale(1.12);
+      animation: fadein 1s;
 
-      .bloc3_carte p {
-        margin-top: -15px;
-        font-weight: normal;
-      }
-
-      .bloc3_carte img {
-        height: 10rem;
-        width: 100%;
-        object-fit: cover;
-        box-shadow: none;
-        display: flex;
-        align-content: center;
-        border-radius: 1rem 1rem 0 0;
-      }
-      .bloc3_descresto {
-        display: flex;
-        flex-direction: column;
-      }
-      .bloc3_blocdesc {
-        display: flex;
-        flex-direction: row;
-        margin-left: 20px;
-        justify-content: space-between;
-        margin-bottom: -25px;
-        margin-top: -10px;
-        padding-top: 5px;
-      }
-      .bloc3_button {
-        font-size: 25px;
-        padding: 20px 20px 80px 0px;
-        transition: all 450ms;
-      }
-      .fa-stack-1x,
-      .fa-stack-2x {
-        width: inherit;
-        margin-left: 19rem;
-        cursor: pointer;
-      }
-
-      .bloc3_filledbtn {
-        color: transparent;
-        transition-duration: all 1s;
-      }
-      .bloc3_filledbtn:hover {
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        background-image: linear-gradient($periwinkle, $pinky);
-        transition-duration: 1s;
-        transform: scale(1.12);
-        animation: fadein 1s;
-
-        @keyframes fadein {
-          from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
         }
       }
     }
   }
-  .bloc3 h2 {
-    margin-bottom: 10px;
-    margin-left: 20px;
-  }
+}
+.bloc3 h2 {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
 
-  footer {
-    background-color: $darkgrey;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
+footer {
+  background-color: $darkgrey;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
 
-  footer h2 {
-    font-family: "Shrikhand", cursive;
-    color: white;
-    font-weight: lighter;
-    margin-left: 40px;
-    margin-bottom: -15px;
-  }
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-weight: lighter;
+  margin-left: 40px;
+  margin-bottom: -15px;
+}
 
-  .bloc4_footer {
-    list-style: none;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding-bottom: 20px;
-  }
-  .bloc4_footer li {
-    margin-top: 10px;
-  }
-  .iconesli {
-    margin-right: 10px;
-  }
-  footer a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-  }
-
+.bloc4_footer {
+  list-style: none;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+.bloc4_footer li {
+  margin-top: 10px;
+}
+.iconesli {
+  margin-right: 10px;
+}
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
 
 /*DESKTOP*/
 @media only screen and (min-width: 750px) {
-
   /*HEADER DESKTOP*/
-
- 
-  .bloc1_pres {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: #f6f6f6;
-
-    .bloc1_pres1 {
-      font-size: 16px;
-      padding-left: 60px;
-      padding-right: 60px;
-      font-weight: bolder;
-    }
-
-    .bloc1_pres2 {
-      font-size: 20px;
-      font-weight: bold;
-      color: $darkgrey;
-      margin-top: -30px;
-    }
-    .bloc1_pres2 p {
-      font-weight: normal;
-    }
-    .bloc1_button {
-      margin: 0 30rem 0 30rem;
-      font-size: 15px;
-      color: white;
-      background: linear-gradient($pinky, $periwinkle);
-      box-shadow: 1px 0 8px darkgray;
-      border-radius: 25px;
-      border: none;
-      font-weight: bold;
-      padding: 15px 0 15px 0;
-      margin-bottom: 30px;
-      cursor: pointer;
-      transition-duration: 400ms;
-      transition-property: transform;
-    }
-    .bloc1_button:hover {
-      transform: scale(1.12);
-      background: linear-gradient(
-        lighten($pinky, 4%),
-        lighten($periwinkle, 4%)
-      );
-      box-shadow: 1px 0 8px black;
-    }
+  .bloc1_pres2 p {
+    font-weight: normal;
+  }
+  .bloc1_button {
+    margin: 0 30rem 0 30rem;
+    font-size: 15px;
+    color: white;
+    background: linear-gradient($pinky, $periwinkle);
+    box-shadow: 1px 0 8px darkgray;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    padding: 15px 0 15px 0;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition-duration: 400ms;
+    transition-property: transform;
+  }
+  .bloc1_button:hover {
+    transform: scale(1.12);
+    background: linear-gradient(lighten($pinky, 4%), lighten($periwinkle, 4%));
+    box-shadow: 1px 0 8px black;
   }
 
   .bloc2 h2 {
@@ -407,9 +376,6 @@ body {
     .bloc2_buttonicon1:hover {
       color: $periwinkle;
     }
-
-    
-   
   }
 
   .bloc3 {
@@ -418,8 +384,9 @@ body {
     padding-top: 15px;
 
     .bloc3_badge {
-      position: absolute;
+      /*position: absolute;*/
       margin-left: 25rem;
+      border: solid 1px red;
     }
     .bloc3_badge p {
       background-color: #99e2d0;
@@ -430,9 +397,46 @@ body {
     }
 
     .bloc3_cartes {
+      align-items: inherit;
+      border: blue solid 2px;
       display: grid;
-      grid-template-columns:repeat(2,1fr);
+      justify-items: center;
+      grid-template-columns: repeat(2, 0.5fr);
       row-gap: 20px;
     }
-  } 
-}    
+    .bloc3_carte {
+      border: solid green 2px;
+      border-radius: 1rem;
+      background-color: white;
+      box-shadow: 0 0 16px #d2d2d2;
+      margin-top: 2rem;
+    }
+
+    .bloc3_carte p {
+      margin-top: -15px;
+      font-weight: normal;
+    }
+
+    .bloc3_carte img {
+      height: 20rem;
+      object-fit: cover;
+      box-shadow: none;
+      display: flex;
+      align-content: center;
+      border-radius: 1rem 1rem 0 0;
+    }
+    .bloc3_descresto {
+      display: flex;
+      flex-direction: column;
+    }
+    .bloc3_blocdesc {
+      display: flex;
+      flex-direction: row;
+      margin-left: 20px;
+      justify-content: space-between;
+      margin-bottom: -25px;
+      margin-top: -10px;
+      padding-top: 5px;
+    }
+  }
+}

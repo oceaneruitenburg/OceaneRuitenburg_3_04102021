@@ -397,36 +397,10 @@ footer a {
 /*DESKTOP*/
 @media only screen and (min-width: 750px) {
   /*HEADER DESKTOP*/
-  .bloc1_pres {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    background-color: #f6f6f6;
-  }
-  .bloc1_pres .bloc1_pres1 {
-    font-size: 16px;
-    padding-left: 60px;
-    padding-right: 60px;
-    font-weight: bolder;
-  }
-  .bloc1_pres .bloc1_pres2 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #404040;
-    margin-top: -30px;
-  }
-  .bloc1_pres .bloc1_pres2 p {
+  .bloc1_pres2 p {
     font-weight: normal;
   }
-  .bloc1_pres .bloc1_button {
+  .bloc1_button {
     margin: 0 30rem 0 30rem;
     font-size: 15px;
     color: white;
@@ -447,7 +421,7 @@ footer a {
     transition-property: transform;
     transition-property: transform, -webkit-transform;
   }
-  .bloc1_pres .bloc1_button:hover {
+  .bloc1_button:hover {
     -webkit-transform: scale(1.12);
             transform: scale(1.12);
     background: -webkit-gradient(linear, left top, left bottom, from(#ff8de0), to(#9e67e0));
@@ -536,8 +510,9 @@ footer a {
     padding-top: 15px;
   }
   .bloc3 .bloc3_badge {
-    position: absolute;
+    /*position: absolute;*/
     margin-left: 25rem;
+    border: solid 1px red;
   }
   .bloc3 .bloc3_badge p {
     background-color: #99e2d0;
@@ -547,11 +522,66 @@ footer a {
     border-radius: 5%;
   }
   .bloc3 .bloc3_cartes {
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    border: blue solid 2px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    -ms-grid-columns: (0.5fr)[2];
+        grid-template-columns: repeat(2, 0.5fr);
     row-gap: 20px;
+  }
+  .bloc3 .bloc3_carte {
+    border: solid green 2px;
+    border-radius: 1rem;
+    background-color: white;
+    -webkit-box-shadow: 0 0 16px #d2d2d2;
+            box-shadow: 0 0 16px #d2d2d2;
+    margin-top: 2rem;
+  }
+  .bloc3 .bloc3_carte p {
+    margin-top: -15px;
+    font-weight: normal;
+  }
+  .bloc3 .bloc3_carte img {
+    height: 20rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .bloc3 .bloc3_descresto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bloc3 .bloc3_blocdesc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: -25px;
+    margin-top: -10px;
+    padding-top: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
