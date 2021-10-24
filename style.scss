@@ -157,7 +157,7 @@ body {
 
   .bloc3_badge {
     position: absolute;
-    right: 33px;
+    right: 15%;
     margin-top: 30px;
   }
   .bloc3_badge p {
@@ -221,13 +221,13 @@ body {
     .fa-stack-1x,
     .fa-stack-2x {
       width: inherit;
-      margin-left: 19rem;
+      margin-left: 20rem;
       cursor: pointer;
     }
 
     .bloc3_filledbtn {
       color: transparent;
-      transition-duration: all 1s;
+      transition-duration: 1s;
     }
     .bloc3_filledbtn:hover {
       background-clip: text;
@@ -289,25 +289,28 @@ footer a {
 }
 
 /*DESKTOP*/
-@media only screen and (min-width: 750px) {
+@media screen and (min-width: 750px) {
   /*HEADER DESKTOP*/
   .bloc1_pres2 p {
     font-weight: normal;
   }
-  .bloc1_button {
-    margin: 0 30rem 0 30rem;
-    font-size: 15px;
-    color: white;
-    background: linear-gradient($pinky, $periwinkle);
-    box-shadow: 1px 0 8px darkgray;
-    border-radius: 25px;
-    border: none;
-    font-weight: bold;
-    padding: 15px 0 15px 0;
-    margin-bottom: 30px;
-    cursor: pointer;
-    transition-duration: 400ms;
-    transition-property: transform;
+  .bloc1_pres {
+    .bloc1_button {
+      margin: 0 30rem 0 30rem;
+      font-size: 15px;
+      color: white;
+      background: linear-gradient($pinky, $periwinkle);
+      box-shadow: 1px 0 8px darkgray;
+      border-radius: 25px;
+      border: none;
+      font-weight: bold;
+      padding: 15px 0 15px 0;
+      margin-bottom: 30px;
+      cursor: pointer;
+      transition-duration: 400ms;
+      transition-property: transform;
+    }
+
   }
   .bloc1_button:hover {
     transform: scale(1.12);
@@ -324,6 +327,7 @@ footer a {
     flex-direction: row;
     justify-content: center;
     padding-bottom: 40px;
+    border: solid purple 2px;
     .numbers_1 {
       background-color: $periwinkle;
       color: white;
@@ -361,20 +365,11 @@ footer a {
       border-radius: 15px;
       background-color: #f6f6f6;
       box-shadow: 0 0 16px #0000002e;
+      border: solid 3px orange;
     }
 
     .bloc2_button:hover {
       background-color: #f5edff;
-    }
-
-    .bloc2_buttonicon1 {
-      color: #7c7c7c;
-      margin-right: 10px;
-      padding: 0 15px 0 10px;
-      font-size: 17px;
-    }
-    .bloc2_buttonicon1:hover {
-      color: $periwinkle;
     }
   }
 
@@ -384,9 +379,10 @@ footer a {
     padding-top: 15px;
 
     .bloc3_badge {
-      /*position: absolute;*/
-      margin-left: 25rem;
+      position: absolute;
+      margin-left: 24rem;
       border: solid 1px red;
+      right: inherit;
     }
     .bloc3_badge p {
       background-color: #99e2d0;
@@ -403,13 +399,18 @@ footer a {
       justify-items: center;
       grid-template-columns: repeat(2, 0.5fr);
       row-gap: 20px;
-    }
-    .bloc3_carte {
-      border: solid green 2px;
-      border-radius: 1rem;
-      background-color: white;
-      box-shadow: 0 0 16px #d2d2d2;
-      margin-top: 2rem;
+      .fa-stack-1x,
+      .fa-stack-2x {
+        border: solid yellowgreen 2px;
+        /*position: absolute;*/
+        width: inherit;
+        cursor: pointer;
+        left: unset;
+      }
+      .bloc3_carte {
+        border: solid green 2px;
+        width: 30rem;
+      }
     }
 
     .bloc3_carte p {
