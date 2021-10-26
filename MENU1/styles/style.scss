@@ -1,0 +1,358 @@
+$periwinkle: #9356dc;
+$darkgrey: #404040;
+$pinky: #ff79da;
+
+body {
+    font-family: "Roboto";
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    max-width: 1050px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    margin-bottom: 2px;
+    box-shadow: 0px 3px 7px darkgrey;
+}
+.retour {
+    color: black;
+    position: absolute;
+    left: 1em;
+    vertical-align: middle;
+}
+.bannière {
+    height: 250px;
+    
+}
+.restaurant_menu1 {
+    background: url(images/palettedugout.jpg) no-repeat center/150%;
+}
+.centre_page {
+    background-color: #e6e6e6
+}
+section {
+    display: block;
+}
+.menu {
+    background-color: #e6e6e6;
+    padding: 5%;
+    border-radius: 35px;
+    position: relative;
+    top: -35px;
+}
+.menu_header_title {
+    font-family: "Shrikhand",cursive;
+    margin-block-start: 10px;
+}
+.menu_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 105px;
+}
+.likebutton {
+    position: relative;
+    width: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fa-stack-1x,
+    .fa-stack-2x {
+      cursor: pointer;
+      font-size: 25px;
+    }
+    .likebutton_filled {
+      color: transparent;
+      transition-duration: 1s;
+    }
+    .likebutton_filled:hover {
+        background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient($periwinkle, $pinky);
+      transition-duration: 1s;
+      transform: scale(1.12);
+      animation: fadein 1s;
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+    }
+
+}
+
+}
+.menu_entrées {
+    margin-bottom: 45px;
+}
+.menu_entrées_title {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-top: 3%;
+    margin-left: 3%;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.menu_entrées_title-border {
+    background-color: #99e2d0;
+    height: 2px;
+    width: 40px;
+}
+.menu_entrées_repas {
+    background-color: #f5f5f5;
+    position: relative;
+    box-shadow: 0px 8px 8px #ebebeb;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+    list-style: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.menu_entrée_repas_descrip {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    font-size: 14px;
+    /*height: 100%;
+    width: 100%;*/
+    padding-left: 8px;
+    padding-bottom: 8px;
+}
+.menu_entrées_repas_descrip p {
+    width: auto;
+    margin: 0px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+ul {
+    padding: 0px;
+}
+.prix_entrée {
+    position: absolute;
+    right: 24px;
+    bottom: 10%;
+    font-weight: bold;
+    display: inline-block;
+    
+}
+
+/* A COMPLETER POUR LES ANIMATIONS*/ 
+
+
+
+/*PLATS DE RESISTANCE*/
+
+.menu_plats {
+    margin-bottom: 45px;
+}
+.menu_plats_title {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-top: 3%;
+    margin-left: 3%;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.menu_plats_title-border {
+    background-color: #99e2d0;
+    height: 2px;
+    width: 40px;
+}
+.menu_plats_repas {
+    background-color: #f5f5f5;
+    position: relative;
+    box-shadow: 0px 8px 8px #ebebeb;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+    list-style: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.menu_plats_repas_descrip {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    font-size: 14px;
+    /*height: 100%;
+    width: 100%;*/
+    padding-left: 8px;
+    padding-bottom: 8px;
+}
+.menu_plats_repas_descrip p {
+    width: auto;
+    margin: 0px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+ul {
+    padding: 0px;
+}
+.prix_plat {
+    position: absolute;
+    right: 24px;
+    bottom: 10%;
+    font-weight: bold;
+    display: inline-block;
+    
+}
+
+/* ANIMATIONS A AJOUTER*/
+
+/*DESSERTS*/
+.menu_desserts {
+    margin-bottom: 45px;
+}
+.menu_desserts_title {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-top: 3%;
+    margin-left: 3%;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.menu_desserts_title-border {
+    background-color: #99e2d0;
+    height: 2px;
+    width: 40px;
+}
+.menu_desserts_repas {
+    background-color: #f5f5f5;
+    position: relative;
+    box-shadow: 0px 8px 8px #ebebeb;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+    list-style: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.menu_desserts_repas_descrip {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    font-size: 14px;
+    /*height: 100%;
+    width: 100%;*/
+    padding-left: 8px;
+    padding-bottom: 8px;
+}
+.menu_desserts_repas_descrip p {
+    width: auto;
+    margin: 0px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+ul {
+    padding: 0px;
+}
+.prix_dessert {
+    position: absolute;
+    right: 24px;
+    bottom: 10%;
+    font-weight: bold;
+    display: inline-block;
+    
+}
+
+/*BOUTON*/
+.menu_button {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: 90%;
+    height: 50px;
+    color: white;
+    background: linear-gradient($pinky, $periwinkle);
+    box-shadow: 1px 0 8px darkgray;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition-duration: 400ms;
+    transition-property: transform;
+  }
+  
+  .menu_button:hover {
+    transform: scale(1.12);
+    background: linear-gradient(lighten($pinky, 4%), lighten($periwinkle, 4%));
+    box-shadow: 1px 0 8px black;
+  }
+  
+   /*FOOTER*/
+
+  footer {
+    background-color: $darkgrey;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 5%;
+  }
+  
+  footer h2 {
+    font-family: "Shrikhand", cursive;
+    color: white;
+    font-weight: lighter;
+    margin-left: 40px;
+    margin-bottom: -15px;
+  }
+  
+  .bloc4_footer {
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 20px;
+  }
+  .bloc4_footer li {
+    margin-top: 10px;
+  }
+  .iconesli {
+    margin-right: 10px;
+  }
+  footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+  }
