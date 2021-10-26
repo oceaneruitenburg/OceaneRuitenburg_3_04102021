@@ -73,7 +73,8 @@ body {
 }
 
 .bloc1_pres .bloc1_button {
-  margin: 0 80px 0 80px;
+  width: 60%;
+  margin: auto;
   font-size: 15px;
   color: white;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
