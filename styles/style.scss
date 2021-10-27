@@ -2,9 +2,11 @@ $periwinkle: #9356dc;
 $darkgrey: #404040;
 $pinky: #ff79da;
 body {
-  font-family: "Roboto", sans-serif;
-  max-width: 1200px;
-  margin: auto;
+  font-family: "Roboto";
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    max-width: 1050px
 }
 
 /*HEADER MOBILE*/
@@ -75,79 +77,144 @@ body {
 }
 
 .bloc2 h2 {
-  font-weight: bolder;
   margin-left: 20px;
 }
-.bloc2_buttons {
-  display: flex;
-  flex-direction: column;
+
+.bloc2_buttons ul {
   padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+
   .numbers_1 {
     background-color: $periwinkle;
     color: white;
-    border-radius: 100%;
-    padding: 2px 6px 2px 6px;
-    margin-left: -90px;
-    margin-right: 6px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
     font-size: 12.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 4.5%;;
   }
   .numbers_2 {
     background-color: $periwinkle;
     color: white;
-    border-radius: 100%;
-    padding: 2px 6px 2px 6px;
-    margin-left: -112px;
-    margin-right: 6px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
     font-size: 12.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 4.5%;;
   }
   .numbers_3 {
     background-color: $periwinkle;
     color: white;
-    border-radius: 100%;
-    padding: 2px 6px 2px 6px;
-    margin-left: -103px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
     font-size: 12.5px;
-  }
-  .bloc2_button {
-    padding: 25px 0px 25px 0px;
-    margin: 10px 30px 10px 30px;
     display: flex;
-    font-size: 15px;
-    flex-direction: row;
     justify-content: center;
-    border: none;
-    border-radius: 15px;
-    background-color: #f6f6f6;
-    box-shadow: 0 0 16px #0000002e;
+    align-items: center;
+    position: absolute;
+    left: 4.5%;;
   }
 
-  .bloc2_button:hover {
-    background-color: #f5edff;
-    color: black;
+  .bloc2_button1 {
+    width: 85%;
+    margin-bottom: 13px;
+    margin-top: 13px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 24px;
+    background-color: #f6f6f6;
+    box-shadow: 0 0 16px #0000002e;
+    &:hover {
+      background-color:#F5EDFF
+    }
+    &:hover .bloc2_buttonicon1 {
+      color: #9356dc;
+    }
   }
+  .bloc2_button2 {
+    width: 85%;
+    margin-bottom: 13px;
+    margin-top: 13px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 24px;
+    background-color: #f6f6f6;
+    box-shadow: 0 0 16px #0000002e;
+    &:hover {
+      background-color:#F5EDFF
+    }
+    &:hover .bloc2_buttonicon2 {
+      color: #9356dc;
+    }
+  }
+  .bloc2_button3 {
+    width: 85%;
+    margin-bottom: 13px;
+    margin-top: 13px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 24px;
+    background-color: #f6f6f6;
+    box-shadow: 0 0 16px #0000002e;
+    &:hover {
+      background-color:#F5EDFF
+    }
+    &:hover .bloc2_buttonicon3 {
+      color: #9356dc;
+    }
+  }
+  .bloc2_button a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    cursor: pointer;
+  }
+
 
   .bloc2_buttonicon1 {
     color: #7c7c7c;
-    margin-right: 10px;
-    padding: 0 15px 0 10px;
-    font-size: 17px;
-  }
-  .bloc2_buttonicon1:hover {
-    color: $periwinkle;
+    /*margin-right: 10px;*/
+    width: 25px;
+    height: 25px;
   }
 
   .bloc2_buttonicon2 {
     color: #7c7c7c;
-    margin-right: 10px;
-    padding: 0 8px 0 10px;
-    font-size: 17px;
+    /*margin-right: 10px;*/
+    width: 25px;
+    height: 25px;
   }
 
   .bloc2_buttonicon3 {
     color: #7c7c7c;
-    margin-right: 2px;
-    padding: 0 15px 0 15px;
-    font-size: 17px;
+    /*margin-right: 10px;*/
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -158,7 +225,7 @@ body {
 
   .bloc3_badge {
     position: absolute;
-    right: 15%;
+    right: 9%;
     margin-top: 30px;
   }
   .bloc3_badge p {
@@ -224,6 +291,7 @@ body {
       width: inherit;
       margin-left: 20rem;
       cursor: pointer;
+      /*left: 12%;*/
     }
 
     .bloc3_filledbtn {
@@ -290,89 +358,46 @@ footer a {
 }
 
 /*DESKTOP*/
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   /*HEADER DESKTOP*/
   .bloc1_pres2 p {
     font-weight: normal;
   }
   .bloc1_pres {
     .bloc1_button {
-      margin: 0 30rem 0 30rem;
-      font-size: 15px;
-      color: white;
-      background: linear-gradient($pinky, $periwinkle);
-      box-shadow: 1px 0 8px darkgray;
-      border-radius: 25px;
-      border: none;
-      font-weight: bold;
-      padding: 15px 0 15px 0;
-      margin-bottom: 30px;
-      cursor: pointer;
-      transition-duration: 400ms;
-      transition-property: transform;
+      width: 20%;
     }
-
   }
-  .bloc1_button:hover {
-    transform: scale(1.12);
-    background: linear-gradient(lighten($pinky, 4%), lighten($periwinkle, 4%));
-    box-shadow: 1px 0 8px black;
-  }
-
-  .bloc2 h2 {
-    font-weight: bolder;
-    margin-left: 20px;
-  }
-  .bloc2_buttons {
+  .bloc2_buttons ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding-bottom: 40px;
-    border: solid purple 2px;
+    justify-content: space-around;
+    padding: 5px;
+
+    .bloc2_button1 {
+      width: 26%;
+      cursor: pointer;
+    }
+    .bloc2_button2 {
+      width: 26%;
+      cursor: pointer;
+    }
+    .bloc2_button3 {
+      width: 26%;
+      cursor: pointer;
+    }
     .numbers_1 {
-      background-color: $periwinkle;
-      color: white;
-      border-radius: 100%;
-      padding: 2px 6px 2px 6px;
-      margin-left: -100px;
-      margin-right: 6px;
-      font-size: 12.5px;
+      left: 24.2%;
     }
     .numbers_2 {
-      background-color: $periwinkle;
-      color: white;
-      border-radius: 100%;
-      padding: 2px 6px 2px 6px;
-      margin-left: -100px;
-      margin-right: 6px;
-      font-size: 12.5px;
+      left: 42.4%;
     }
     .numbers_3 {
-      background-color: $periwinkle;
-      color: white;
-      border-radius: 100%;
-      padding: 2px 6px 2px 6px;
-      margin-left: -100px;
-      font-size: 12.5px;
-    }
-    .bloc2_button {
-      padding: 25px 90px 25px 90px;
-      margin: 10px 30px 10px 30px;
-      display: flex;
-      font-size: 15px;
-      flex-direction: row;
-      justify-content: center;
-      border: none;
-      border-radius: 15px;
-      background-color: #f6f6f6;
-      box-shadow: 0 0 16px #0000002e;
-      border: solid 3px orange;
-    }
-
-    .bloc2_button:hover {
-      background-color: #f5edff;
+      left: 60.8%;
     }
   }
+
+  
 
   .bloc3 {
     background-color: #f6f6f6;
@@ -381,8 +406,7 @@ footer a {
 
     .bloc3_badge {
       position: absolute;
-      margin-left: 24rem;
-      border: solid 1px red;
+      margin-left: 9rem;
       right: inherit;
     }
     .bloc3_badge p {
@@ -395,22 +419,20 @@ footer a {
 
     .bloc3_cartes {
       align-items: inherit;
-      border: blue solid 2px;
-      display: grid;
+      display: flex;
       justify-items: center;
-      grid-template-columns: repeat(2, 0.5fr);
-      row-gap: 20px;
+      flex-direction: row;
+      justify-content: space-around;
+      
       .fa-stack-1x,
       .fa-stack-2x {
-        border: solid yellowgreen 2px;
-        /*position: absolute;*/
+        margin-left: -20px;
         width: inherit;
         cursor: pointer;
         left: unset;
       }
       .bloc3_carte {
-        border: solid green 2px;
-        width: 30rem;
+        width: 23%;
       }
     }
 
@@ -442,3 +464,75 @@ footer a {
     }
   }
 }
+
+/*tablettes*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .bloc1_pres {
+    .bloc1_button {
+      width: 30%;
+      font-size: 17px;
+    }
+  }
+  
+  .bloc2_buttons ul {
+    display: flex;
+    /*flex-direction: row;
+    justify-content: space-around;*/
+    padding: 5px;
+    
+    .bloc2_button1 {
+      width: 80%;
+      cursor: pointer;
+      font-size: 20px;
+      &:hover {
+        background-color:#F5EDFF ;
+      }
+    }
+    .bloc2_button2 {
+      width: 80%;
+      font-size: 20px;
+      cursor: pointer;
+      &:hover .bloc2_buttonicon2 {
+        background-color:#F5EDFF ;
+        color: #9356dc;
+      }
+    }
+    
+    .bloc2_button3 {
+      width: 80%;
+      font-size: 20px;
+      cursor: pointer;
+      &:hover {
+        background-color:#F5EDFF ;
+      }
+    }
+    .numbers_1 {
+      left: 9%;
+    }
+    .numbers_2 {
+      left: 9%;
+    }
+    .numbers_3 {
+      left: 9%;
+    }
+  }
+  .bloc3 {
+    .bloc3_badge {
+      right: 16%;
+    }
+    .bloc3_cartes {
+      .bloc3_carte {
+        width: 80%;
+      }
+      .fa-stack-1x,
+      .fa-stack-2x {
+        margin-left: -20px;
+        width: inherit;
+        cursor: pointer;
+        left: 85%;
+      }
+    }
+  }
+  
+}
+/*selecteur qui se met en erreur si je le met ?*/
