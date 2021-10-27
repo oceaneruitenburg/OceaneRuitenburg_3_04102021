@@ -107,12 +107,7 @@ body {
 }
 
 .bloc2 h2 {
-  font-weight: bolder;
   margin-left: 20px;
-}
-
-.bloc2 {
-  /*padding: 5%;*/
 }
 
 .bloc2_buttons ul {
@@ -214,6 +209,14 @@ body {
           box-shadow: 0 0 16px #0000002e;
 }
 
+.bloc2_buttons ul .bloc2_button1:hover {
+  background-color: #F5EDFF;
+}
+
+.bloc2_buttons ul .bloc2_button1:hover .bloc2_buttonicon1 {
+  color: #9356dc;
+}
+
 .bloc2_buttons ul .bloc2_button2 {
   width: 85%;
   margin-bottom: 13px;
@@ -233,6 +236,14 @@ body {
   background-color: #f6f6f6;
   -webkit-box-shadow: 0 0 16px #0000002e;
           box-shadow: 0 0 16px #0000002e;
+}
+
+.bloc2_buttons ul .bloc2_button2:hover {
+  background-color: #F5EDFF;
+}
+
+.bloc2_buttons ul .bloc2_button2:hover .bloc2_buttonicon2 {
+  color: #9356dc;
 }
 
 .bloc2_buttons ul .bloc2_button3 {
@@ -256,6 +267,14 @@ body {
           box-shadow: 0 0 16px #0000002e;
 }
 
+.bloc2_buttons ul .bloc2_button3:hover {
+  background-color: #F5EDFF;
+}
+
+.bloc2_buttons ul .bloc2_button3:hover .bloc2_buttonicon3 {
+  color: #9356dc;
+}
+
 .bloc2_buttons ul .bloc2_button a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,20 +292,11 @@ body {
   cursor: pointer;
 }
 
-.bloc2_buttons ul .bloc2_buttons a:hover {
-  background-color: #f5edff;
-  color: black;
-}
-
 .bloc2_buttons ul .bloc2_buttonicon1 {
   color: #7c7c7c;
   /*margin-right: 10px;*/
   width: 25px;
   height: 25px;
-}
-
-.bloc2_buttons ul .bloc2_buttonicon1:hover {
-  color: #9356dc;
 }
 
 .bloc2_buttons ul .bloc2_buttonicon2 {
@@ -500,7 +510,7 @@ footer a {
 }
 
 /*DESKTOP*/
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   /*HEADER DESKTOP*/
   .bloc1_pres2 p {
     font-weight: normal;
@@ -524,25 +534,13 @@ footer a {
     width: 26%;
     cursor: pointer;
   }
-  .bloc2_buttons ul .bloc2_button1, .bloc2_buttons ul .bloc2_button1 i:hover {
-    background-color: #F5EDFF;
-    color: pink;
-  }
   .bloc2_buttons ul .bloc2_button2 {
     width: 26%;
     cursor: pointer;
   }
-  .bloc2_buttons ul .bloc2_button2:hover {
-    background-color: #F5EDFF;
-    color: pink;
-  }
   .bloc2_buttons ul .bloc2_button3 {
     width: 26%;
     cursor: pointer;
-  }
-  .bloc2_buttons ul .bloc2_button3:hover {
-    background-color: #F5EDFF;
-    color: pink;
   }
   .bloc2_buttons ul .numbers_1 {
     left: 24.2%;
@@ -638,4 +636,69 @@ footer a {
     padding-top: 5px;
   }
 }
+
+/*tablettes*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .bloc1_pres .bloc1_button {
+    width: 30%;
+    font-size: 17px;
+  }
+  .bloc2_buttons ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*flex-direction: row;
+    justify-content: space-around;*/
+    padding: 5px;
+  }
+  .bloc2_buttons ul .bloc2_button1 {
+    width: 80%;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .bloc2_buttons ul .bloc2_button1:hover {
+    background-color: #F5EDFF;
+  }
+  .bloc2_buttons ul .bloc2_button2 {
+    width: 80%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .bloc2_buttons ul .bloc2_button2:hover .bloc2_buttonicon2 {
+    background-color: #F5EDFF;
+    color: #9356dc;
+  }
+  .bloc2_buttons ul .bloc2_button3 {
+    width: 80%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .bloc2_buttons ul .bloc2_button3:hover {
+    background-color: #F5EDFF;
+  }
+  .bloc2_buttons ul .numbers_1 {
+    left: 9%;
+  }
+  .bloc2_buttons ul .numbers_2 {
+    left: 9%;
+  }
+  .bloc2_buttons ul .numbers_3 {
+    left: 9%;
+  }
+  .bloc3 .bloc3_badge {
+    right: 16%;
+  }
+  .bloc3 .bloc3_cartes .bloc3_carte {
+    width: 80%;
+  }
+  .bloc3 .bloc3_cartes .fa-stack-1x,
+  .bloc3 .bloc3_cartes .fa-stack-2x {
+    margin-left: -20px;
+    width: inherit;
+    cursor: pointer;
+    left: 85%;
+  }
+}
+
+/*selecteur qui se met en erreur si je le met ?*/
 /*# sourceMappingURL=style.css.map */
