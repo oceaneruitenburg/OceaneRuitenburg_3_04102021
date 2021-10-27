@@ -1,7 +1,9 @@
 body {
-  font-family: "Roboto", sans-serif;
-  max-width: 1200px;
+  font-family: "Roboto";
+  width: 100%;
+  height: 100%;
   margin: auto;
+  max-width: 1050px;
 }
 
 /*HEADER MOBILE*/
@@ -109,95 +111,196 @@ body {
   margin-left: 20px;
 }
 
-.bloc2_buttons {
+.bloc2 {
+  /*padding: 5%;*/
+}
+
+.bloc2_buttons ul {
+  padding-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 40px;
+  padding: 5px;
 }
 
-.bloc2_buttons .numbers_1 {
+.bloc2_buttons ul .numbers_1 {
   background-color: #9356dc;
   color: white;
-  border-radius: 100%;
-  padding: 2px 6px 2px 6px;
-  margin-left: -90px;
-  margin-right: 6px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
   font-size: 12.5px;
-}
-
-.bloc2_buttons .numbers_2 {
-  background-color: #9356dc;
-  color: white;
-  border-radius: 100%;
-  padding: 2px 6px 2px 6px;
-  margin-left: -112px;
-  margin-right: 6px;
-  font-size: 12.5px;
-}
-
-.bloc2_buttons .numbers_3 {
-  background-color: #9356dc;
-  color: white;
-  border-radius: 100%;
-  padding: 2px 6px 2px 6px;
-  margin-left: -103px;
-  font-size: 12.5px;
-}
-
-.bloc2_buttons .bloc2_button {
-  padding: 25px 0px 25px 0px;
-  margin: 10px 30px 10px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 15px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: none;
-  border-radius: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 4.5%;
+}
+
+.bloc2_buttons ul .numbers_2 {
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 12.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 4.5%;
+}
+
+.bloc2_buttons ul .numbers_3 {
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 12.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 4.5%;
+}
+
+.bloc2_buttons ul .bloc2_button1 {
+  width: 85%;
+  margin-bottom: 13px;
+  margin-top: 13px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 24px;
   background-color: #f6f6f6;
   -webkit-box-shadow: 0 0 16px #0000002e;
           box-shadow: 0 0 16px #0000002e;
 }
 
-.bloc2_buttons .bloc2_button:hover {
+.bloc2_buttons ul .bloc2_button2 {
+  width: 85%;
+  margin-bottom: 13px;
+  margin-top: 13px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 24px;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 0 0 16px #0000002e;
+          box-shadow: 0 0 16px #0000002e;
+}
+
+.bloc2_buttons ul .bloc2_button3 {
+  width: 85%;
+  margin-bottom: 13px;
+  margin-top: 13px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 24px;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 0 0 16px #0000002e;
+          box-shadow: 0 0 16px #0000002e;
+}
+
+.bloc2_buttons ul .bloc2_button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  cursor: pointer;
+}
+
+.bloc2_buttons ul .bloc2_buttons a:hover {
   background-color: #f5edff;
   color: black;
 }
 
-.bloc2_buttons .bloc2_buttonicon1 {
+.bloc2_buttons ul .bloc2_buttonicon1 {
   color: #7c7c7c;
-  margin-right: 10px;
-  padding: 0 15px 0 10px;
-  font-size: 17px;
+  /*margin-right: 10px;*/
+  width: 25px;
+  height: 25px;
 }
 
-.bloc2_buttons .bloc2_buttonicon1:hover {
+.bloc2_buttons ul .bloc2_buttonicon1:hover {
   color: #9356dc;
 }
 
-.bloc2_buttons .bloc2_buttonicon2 {
+.bloc2_buttons ul .bloc2_buttonicon2 {
   color: #7c7c7c;
-  margin-right: 10px;
-  padding: 0 8px 0 10px;
-  font-size: 17px;
+  /*margin-right: 10px;*/
+  width: 25px;
+  height: 25px;
 }
 
-.bloc2_buttons .bloc2_buttonicon3 {
+.bloc2_buttons ul .bloc2_buttonicon3 {
   color: #7c7c7c;
-  margin-right: 2px;
-  padding: 0 15px 0 15px;
-  font-size: 17px;
+  /*margin-right: 10px;*/
+  width: 25px;
+  height: 25px;
 }
 
 .bloc3 {
@@ -208,7 +311,7 @@ body {
 
 .bloc3 .bloc3_badge {
   position: absolute;
-  right: 15%;
+  right: 9%;
   margin-top: 30px;
 }
 
@@ -307,6 +410,7 @@ body {
   width: inherit;
   margin-left: 20rem;
   cursor: pointer;
+  /*left: 12%;*/
 }
 
 .bloc3 .bloc3_cartes .bloc3_filledbtn {
@@ -402,101 +506,52 @@ footer a {
     font-weight: normal;
   }
   .bloc1_pres .bloc1_button {
-    margin: 0 30rem 0 30rem;
-    font-size: 15px;
-    color: white;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-    background: linear-gradient(#ff79da, #9356dc);
-    -webkit-box-shadow: 1px 0 8px darkgray;
-            box-shadow: 1px 0 8px darkgray;
-    border-radius: 25px;
-    border: none;
-    font-weight: bold;
-    padding: 15px 0 15px 0;
-    margin-bottom: 30px;
+    width: 20%;
+  }
+  .bloc2_buttons ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 5px;
+  }
+  .bloc2_buttons ul .bloc2_button1 {
+    width: 26%;
     cursor: pointer;
-    -webkit-transition-duration: 400ms;
-            transition-duration: 400ms;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    transition-property: transform;
-    transition-property: transform, -webkit-transform;
   }
-  .bloc1_button:hover {
-    -webkit-transform: scale(1.12);
-            transform: scale(1.12);
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff8de0), to(#9e67e0));
-    background: linear-gradient(#ff8de0, #9e67e0);
-    -webkit-box-shadow: 1px 0 8px black;
-            box-shadow: 1px 0 8px black;
+  .bloc2_buttons ul .bloc2_button1, .bloc2_buttons ul .bloc2_button1 i:hover {
+    background-color: #F5EDFF;
+    color: pink;
   }
-  .bloc2 h2 {
-    font-weight: bolder;
-    margin-left: 20px;
+  .bloc2_buttons ul .bloc2_button2 {
+    width: 26%;
+    cursor: pointer;
   }
-  .bloc2_buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-bottom: 40px;
-    border: solid purple 2px;
+  .bloc2_buttons ul .bloc2_button2:hover {
+    background-color: #F5EDFF;
+    color: pink;
   }
-  .bloc2_buttons .numbers_1 {
-    background-color: #9356dc;
-    color: white;
-    border-radius: 100%;
-    padding: 2px 6px 2px 6px;
-    margin-left: -100px;
-    margin-right: 6px;
-    font-size: 12.5px;
+  .bloc2_buttons ul .bloc2_button3 {
+    width: 26%;
+    cursor: pointer;
   }
-  .bloc2_buttons .numbers_2 {
-    background-color: #9356dc;
-    color: white;
-    border-radius: 100%;
-    padding: 2px 6px 2px 6px;
-    margin-left: -100px;
-    margin-right: 6px;
-    font-size: 12.5px;
+  .bloc2_buttons ul .bloc2_button3:hover {
+    background-color: #F5EDFF;
+    color: pink;
   }
-  .bloc2_buttons .numbers_3 {
-    background-color: #9356dc;
-    color: white;
-    border-radius: 100%;
-    padding: 2px 6px 2px 6px;
-    margin-left: -100px;
-    font-size: 12.5px;
+  .bloc2_buttons ul .numbers_1 {
+    left: 24.2%;
   }
-  .bloc2_buttons .bloc2_button {
-    padding: 25px 90px 25px 90px;
-    margin: 10px 30px 10px 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 15px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border: none;
-    border-radius: 15px;
-    background-color: #f6f6f6;
-    -webkit-box-shadow: 0 0 16px #0000002e;
-            box-shadow: 0 0 16px #0000002e;
-    border: solid 3px orange;
+  .bloc2_buttons ul .numbers_2 {
+    left: 42.4%;
   }
-  .bloc2_buttons .bloc2_button:hover {
-    background-color: #f5edff;
+  .bloc2_buttons ul .numbers_3 {
+    left: 60.8%;
   }
   .bloc3 {
     background-color: #f6f6f6;
@@ -505,8 +560,7 @@ footer a {
   }
   .bloc3 .bloc3_badge {
     position: absolute;
-    margin-left: 24rem;
-    border: solid 1px red;
+    margin-left: 9rem;
     right: inherit;
   }
   .bloc3 .bloc3_badge p {
@@ -520,25 +574,26 @@ footer a {
     -webkit-box-align: inherit;
         -ms-flex-align: inherit;
             align-items: inherit;
-    border: blue solid 2px;
-    display: -ms-grid;
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     justify-items: center;
-    -ms-grid-columns: (0.5fr)[2];
-        grid-template-columns: repeat(2, 0.5fr);
-    row-gap: 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .bloc3 .bloc3_cartes .fa-stack-1x,
   .bloc3 .bloc3_cartes .fa-stack-2x {
-    border: solid yellowgreen 2px;
-    /*position: absolute;*/
+    margin-left: -20px;
     width: inherit;
     cursor: pointer;
     left: unset;
   }
   .bloc3 .bloc3_cartes .bloc3_carte {
-    border: solid green 2px;
-    width: 30rem;
+    width: 23%;
   }
   .bloc3 .bloc3_carte p {
     margin-top: -15px;
