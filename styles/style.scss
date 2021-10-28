@@ -9,16 +9,15 @@ body {
     max-width: 1050px
 }
 
-/*HEADER MOBILE*/
-.bloc1_heading {
+header {
   display: flex;
+  align-items: center;
   justify-content: center;
-  font-family: "Shrikhand", cursive;
-  font-weight: normal;
-  font-size: 15px;
-  margin-bottom: 3px;
+  height: 70px;
   box-shadow: 0px 3px 5px #0000002e;
+  margin-bottom: 2px;
 }
+
 .bloc1_loca {
   display: flex;
   justify-content: center;
@@ -387,7 +386,7 @@ footer a {
       cursor: pointer;
     }
     .numbers_1 {
-      left: 24.2%;
+      left: 23.8%;
     }
     .numbers_2 {
       left: 42.4%;
