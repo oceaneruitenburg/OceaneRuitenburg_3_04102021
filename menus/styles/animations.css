@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/*PAGES CSS ANIMATIONS MENU*/
+.menu_entrées_repas_validate {
+  background-color: #99e2d0;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+  width: 50px;
+  font-size: 20px;
+  position: relative;
+}
+/*# sourceMappingURL=animations.css.map */

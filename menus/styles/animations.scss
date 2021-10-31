@@ -1,0 +1,14 @@
+/*PAGES CSS ANIMATIONS MENU*/
+$green:#99e2d0;
+
+.menu_entrées_repas_validate {
+    background-color: $green;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 50px;
+    font-size: 20px;
+    position: relative;
+}
