@@ -28,7 +28,7 @@ header {
     
 }
 .restaurant_menu1 {
-    background: url(images/palettedugout.jpg) no-repeat center/150%;
+    background: url(../../images/palettedugout.jpg) no-repeat center/150%;
 }
 .centre_page {
     background-color: #e6e6e6
@@ -358,4 +358,8 @@ ul {
     text-decoration: none;
     font-weight: bold;
     color: white;
+  }
+
+  @media screen and (min-width: 1025px) {
+      
   }
