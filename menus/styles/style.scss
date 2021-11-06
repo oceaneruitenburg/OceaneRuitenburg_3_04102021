@@ -361,5 +361,31 @@ ul {
   }
 
   @media screen and (min-width: 1025px) {
-      
-  }
+      .retour {
+          left: 30em;
+      }
+     .menu {
+         padding-top: 80px;
+         display: flex;
+         justify-content: space-between;
+         width: auto;
+         height: auto;
+         align-content: space-between;
+     } 
+     .menu_header {
+         display: flex;
+         justify-content: space-between;
+         position: absolute;
+         width: 90%;
+         top:0;
+     }
+     .menu_button {
+         position: absolute;
+         width: 24%;
+         bottom: -2%;
+         left: 39%;
+        }
+     .menu_plats_repas_descrip {
+         overflow: hidden;
+        }
+    }
