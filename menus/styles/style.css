@@ -19,8 +19,8 @@ header {
           justify-content: center;
   height: 70px;
   margin-bottom: 2px;
-  -webkit-box-shadow: 0px 3px 7px darkgrey;
-          box-shadow: 0px 3px 7px darkgrey;
+  -webkit-box-shadow: 0px 3px 5px #0000002e;
+          box-shadow: 0px 3px 5px #0000002e;
 }
 
 .retour {
@@ -35,7 +35,7 @@ header {
 }
 
 .restaurant_menu1 {
-  background: url(images/palettedugout.jpg) no-repeat center/150%;
+  background: url(../../images/palettedugout.jpg) no-repeat center/150%;
 }
 
 .centre_page {
@@ -147,7 +147,7 @@ section {
           flex-direction: column;
   font-size: 16px;
   text-transform: uppercase;
-  margin: 0px;
+  /*margin: 0px;*/
   margin-top: 3%;
   margin-left: 3%;
   width: auto;
@@ -181,6 +181,10 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
+}
+
+.menu_entrées_repas .menu_entrées_repas_titre {
+  margin-bottom: -2px;
 }
 
 .menu_entrée_repas_descrip {
@@ -482,5 +486,44 @@ footer a {
   text-decoration: none;
   font-weight: bold;
   color: white;
+}
+
+@media screen and (min-width: 1025px) {
+  .retour {
+    left: 30em;
+  }
+  .menu {
+    padding-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: auto;
+    height: auto;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .menu_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    width: 90%;
+    top: 0;
+  }
+  .menu_button {
+    position: absolute;
+    width: 24%;
+    bottom: -2%;
+    left: 39%;
+  }
+  .menu_plats_repas_descrip {
+    overflow: hidden;
+  }
 }
 /*# sourceMappingURL=style.css.map */
