@@ -145,7 +145,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  left: 4.5%;
+  left: 6%;
 }
 
 .bloc2_buttons ul .numbers_2 {
@@ -165,7 +165,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  left: 4.5%;
+  left: 6%;
 }
 
 .bloc2_buttons ul .numbers_3 {
@@ -185,7 +185,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  left: 4.5%;
+  left: 6%;
 }
 
 .bloc2_buttons ul .bloc2_button1 {
@@ -347,8 +347,9 @@ header {
 }
 
 .bloc3 .bloc3_cartes .bloc3_carte {
+  position: relative;
   border-radius: 1rem;
-  width: 21rem;
+  width: 80%;
   background-color: white;
   -webkit-box-shadow: 0 0 16px #d2d2d2;
           box-shadow: 0 0 16px #d2d2d2;
@@ -418,9 +419,9 @@ header {
 .bloc3 .bloc3_cartes .fa-stack-1x,
 .bloc3 .bloc3_cartes .fa-stack-2x {
   width: inherit;
-  margin-left: 20rem;
+  /*margin-left: 20rem;*/
   cursor: pointer;
-  /*left: 12%;*/
+  left: 85%;
 }
 
 .bloc3 .bloc3_cartes .bloc3_filledbtn {
@@ -686,17 +687,17 @@ footer a {
     left: 9%;
   }
   .bloc3 .bloc3_badge {
-    right: 16%;
+    right: 5%;
   }
   .bloc3 .bloc3_cartes .bloc3_carte {
     width: 80%;
   }
   .bloc3 .bloc3_cartes .fa-stack-1x,
   .bloc3 .bloc3_cartes .fa-stack-2x {
-    margin-left: -20px;
+    /*margin-left: -20px;*/
     width: inherit;
     cursor: pointer;
-    left: 85%;
+    left: 88%;
   }
 }
 
