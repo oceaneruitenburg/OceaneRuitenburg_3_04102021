@@ -177,6 +177,12 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
+  cursor: pointer;
+  -webkit-animation: appear 1.5s;
+          animation: appear 1.5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  /*animation-fill-mode: both;*/
 }
 
 .menu_entrées_repas .menu_entrées_repas_titre {
@@ -270,6 +276,7 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .menu_plats_repas_descrip {
@@ -359,6 +366,7 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .menu_desserts_repas_descrip {

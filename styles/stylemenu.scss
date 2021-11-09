@@ -121,6 +121,10 @@ section {
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    cursor: pointer;
+    animation: appear 1.5s;
+    animation-delay: 0s;
+    /*animation-fill-mode: both;*/
     .menu_entrées_repas_titre {
         margin-bottom: -2px;
     }
@@ -195,6 +199,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    cursor: pointer;
 }
 .menu_plats_repas_descrip {
     display: flex;
@@ -263,6 +268,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    cursor: pointer;
 }
 .menu_desserts_repas_descrip {
     display: flex;
