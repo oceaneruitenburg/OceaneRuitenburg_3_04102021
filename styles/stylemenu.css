@@ -51,7 +51,7 @@ section {
 }
 
 .menu_header_title {
-  font-family: "Shrikhand",cursive;
+  font-family: "Shrikhand", cursive;
   -webkit-margin-before: 10px;
           margin-block-start: 10px;
 }
@@ -186,7 +186,10 @@ section {
 }
 
 .menu_entrées_repas .menu_entrées_repas_titre {
-  margin-bottom: -2px;
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .menu_entrée_repas_descrip {
@@ -205,8 +208,8 @@ section {
   padding-bottom: 8px;
 }
 
-.menu_entrées_repas_descrip p {
-  width: auto;
+.menu_entrée_repas_descrip p {
+  width: 200px;
   margin: 0px;
   margin-bottom: 10px;
   overflow: hidden;
@@ -220,10 +223,11 @@ ul {
 
 .prix_entrée {
   position: absolute;
+  margin-left: 0.5px;
   right: 24px;
-  bottom: 10%;
+  bottom: 11.5%;
   font-weight: bold;
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 /* A COMPLETER POUR LES ANIMATIONS*/
@@ -279,6 +283,13 @@ ul {
   cursor: pointer;
 }
 
+.menu_plats_repas_titre {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .menu_plats_repas_descrip {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,12 +322,11 @@ ul {
 .prix_plat {
   position: absolute;
   right: 24px;
-  bottom: 10%;
+  bottom: 11.5%;
   font-weight: bold;
   display: inline-block;
 }
 
-/* ANIMATIONS A AJOUTER*/
 /*DESSERTS*/
 .menu_desserts {
   margin-bottom: 45px;
@@ -369,6 +379,13 @@ ul {
   cursor: pointer;
 }
 
+.menu_desserts_repas_titre {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .menu_desserts_repas_descrip {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -386,7 +403,7 @@ ul {
 }
 
 .menu_desserts_repas_descrip p {
-  width: auto;
+  width: 200px;
   margin: 0px;
   margin-bottom: 10px;
   overflow: hidden;
@@ -401,7 +418,7 @@ ul {
 .prix_dessert {
   position: absolute;
   right: 24px;
-  bottom: 10%;
+  bottom: 11.5%;
   font-weight: bold;
   display: inline-block;
 }
@@ -419,7 +436,7 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 16px;
-  width: 90%;
+  width: 60%;
   height: 50px;
   color: white;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
@@ -459,7 +476,7 @@ footer {
           flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 5%;
+  /*padding: 5%;*/
 }
 
 footer h2 {
@@ -475,6 +492,7 @@ footer h2 {
   color: white;
   font-weight: bold;
   text-decoration: none;
+  margin-left: 40px;
   padding-bottom: 20px;
 }
 
@@ -528,6 +546,24 @@ footer a {
   }
   .menu_plats_repas_descrip {
     overflow: hidden;
+  }
+  .menu_desserts {
+    margin-bottom: 45px;
+    width: 30%;
+  }
+  .menu_plats {
+    margin-bottom: 45px;
+    width: 30%;
+  }
+  .menu_entrées {
+    margin-bottom: 45px;
+    width: 30%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .menu_button {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=stylemenu.css.map */

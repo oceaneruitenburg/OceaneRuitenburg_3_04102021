@@ -1,2 +1,1 @@
 ﻿ajouter les ellipses
-fixer le loader

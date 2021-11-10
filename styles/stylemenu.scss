@@ -3,393 +3,421 @@ $darkgrey: #404040;
 $pinky: #ff79da;
 
 body {
-    font-family: "Roboto";
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    max-width: 1050px;
+  font-family: "Roboto";
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  max-width: 1050px;
 }
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-    margin-bottom: 2px;
-    box-shadow: 0px 3px 5px #0000002e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  margin-bottom: 2px;
+  box-shadow: 0px 3px 5px #0000002e;
 }
 .retour {
-    color: black;
-    position: absolute;
-    left: 1em;
-    vertical-align: middle;
+  color: black;
+  position: absolute;
+  left: 1em;
+  vertical-align: middle;
 }
 .bannière {
-    height: 250px;
-    
+  height: 250px;
 }
 
 .centre_page {
-    background-color: #e6e6e6
+  background-color: #e6e6e6;
 }
 section {
-    display: block;
+  display: block;
 }
 .menu {
-    background-color: #e6e6e6;
-    padding: 5%;
-    border-radius: 35px;
-    position: relative;
-    top: -35px;
+  background-color: #e6e6e6;
+  padding: 5%;
+  border-radius: 35px;
+  position: relative;
+  top: -35px;
 }
 .menu_header_title {
-    font-family: "Shrikhand",cursive;
-    margin-block-start: 10px;
+  font-family: "Shrikhand", cursive;
+  margin-block-start: 10px;
 }
 .menu_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 105px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 105px;
 }
 .likebutton {
-    position: relative;
-    width: 70px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .fa-stack-1x,
-    .fa-stack-2x {
-      cursor: pointer;
-      font-size: 25px;
+  position: relative;
+  width: 70px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .fa-stack-1x,
+  .fa-stack-2x {
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .likebutton_filled {
+    color: transparent;
+    transition-duration: 1s;
+  }
+  .likebutton_filled:hover {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient($periwinkle, $pinky);
+    transition-duration: 1s;
+    transform: scale(1.12);
+    animation: fadein 1s;
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
-    .likebutton_filled {
-      color: transparent;
-      transition-duration: 1s;
-    }
-    .likebutton_filled:hover {
-        background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      background-image: linear-gradient($periwinkle, $pinky);
-      transition-duration: 1s;
-      transform: scale(1.12);
-      animation: fadein 1s;
-      @keyframes fadein {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-    }
-
-}
-
+  }
 }
 .menu_entrées {
-    margin-bottom: 45px;
+  margin-bottom: 45px;
 }
 .menu_entrées_title {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    text-transform: uppercase;
-    /*margin: 0px;*/
-    margin-top: 3%;
-    margin-left: 3%;
-    width: auto;
-    overflow: hidden;
-    white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  text-transform: uppercase;
+  /*margin: 0px;*/
+  margin-top: 3%;
+  margin-left: 3%;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu_entrées_title-border {
-    background-color: #99e2d0;
-    height: 2px;
-    width: 40px;
+  background-color: #99e2d0;
+  height: 2px;
+  width: 40px;
 }
 .menu_entrées_repas {
-    background-color: #f5f5f5;
-    position: relative;
-    box-shadow: 0px 8px 8px #ebebeb;
-    width: 100%;
-    height: 70px;
-    margin-bottom: 20px;
-    list-style: none;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-    cursor: pointer;
-    animation: appear 1.5s;
-    animation-delay: 0s;
-    /*animation-fill-mode: both;*/
-    .menu_entrées_repas_titre {
-        margin-bottom: -2px;
-    }
-}
-.menu_entrée_repas_descrip {
-    display: flex;
-    flex-direction: column;
-    /*justify-content: space-between;*/
-    font-size: 14px;
-    /*height: 100%;
-    width: 100%;*/
-    padding-left: 8px;
-    padding-bottom: 8px;
-}
-.menu_entrées_repas_descrip p {
-    width: auto;
-    margin: 0px;
-    margin-bottom: 10px;
+  background-color: #f5f5f5;
+  position: relative;
+  box-shadow: 0px 8px 8px #ebebeb;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 20px;
+  list-style: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  animation: appear 1.5s;
+  animation-delay: 0s;
+  /*animation-fill-mode: both;*/
+  .menu_entrées_repas_titre {
+    width: 200px;
     overflow: hidden;
     white-space: nowrap;
-    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
+  }
+}
+.menu_entrée_repas_descrip {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+  font-size: 14px;
+  /*height: 100%;
+    width: 100%;*/
+  padding-left: 8px;
+  padding-bottom: 8px;
+}
+.menu_entrée_repas_descrip p {
+  width: 200px;
+  margin: 0px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 ul {
-    padding: 0px;
+  padding: 0px;
 }
 .prix_entrée {
-    position: absolute;
-    right: 24px;
-    bottom: 10%;
-    font-weight: bold;
-    display: inline-block;
-    
+  position: absolute;
+  margin-left: 0.5px;
+  right: 24px;
+  bottom: 11.5%;
+  font-weight: bold;
+  /*display: inline-block;*/
 }
 
-/* A COMPLETER POUR LES ANIMATIONS*/ 
-
-
+/* A COMPLETER POUR LES ANIMATIONS*/
 
 /*PLATS DE RESISTANCE*/
 
 .menu_plats {
-    margin-bottom: 45px;
+  margin-bottom: 45px;
 }
 .menu_plats_title {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin: 0px;
-    margin-top: 3%;
-    margin-left: 3%;
-    width: auto;
-    overflow: hidden;
-    white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-top: 3%;
+  margin-left: 3%;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu_plats_title-border {
-    background-color: #99e2d0;
-    height: 2px;
-    width: 40px;
+  background-color: #99e2d0;
+  height: 2px;
+  width: 40px;
 }
 .menu_plats_repas {
-    background-color: #f5f5f5;
-    position: relative;
-    box-shadow: 0px 8px 8px #ebebeb;
-    width: 100%;
-    height: 70px;
-    margin-bottom: 20px;
-    list-style: none;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-    cursor: pointer;
-}
-.menu_plats_repas_descrip {
-    display: flex;
-    flex-direction: column;
-    /*justify-content: space-between;*/
-    font-size: 14px;
-    /*height: 100%;
-    width: 100%;*/
-    padding-left: 8px;
-    padding-bottom: 8px;
-}
-.menu_plats_repas_descrip p {
-    width: auto;
-    margin: 0px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    white-space: nowrap;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-}
-ul {
-    padding: 0px;
-}
-.prix_plat {
-    position: absolute;
-    right: 24px;
-    bottom: 10%;
-    font-weight: bold;
-    display: inline-block;
-    
+  background-color: #f5f5f5;
+  position: relative;
+  box-shadow: 0px 8px 8px #ebebeb;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 20px;
+  list-style: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-/* ANIMATIONS A AJOUTER*/
+.menu_plats_repas_titre {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.menu_plats_repas_descrip {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+  font-size: 14px;
+  /*height: 100%;
+    width: 100%;*/
+  padding-left: 8px;
+  padding-bottom: 8px;
+}
+.menu_plats_repas_descrip p {
+  width: auto;
+  margin: 0px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+ul {
+  padding: 0px;
+}
+.prix_plat {
+  position: absolute;
+  right: 24px;
+  bottom: 11.5%;
+  font-weight: bold;
+  display: inline-block;
+}
 
 /*DESSERTS*/
 .menu_desserts {
-    margin-bottom: 45px;
+  margin-bottom: 45px;
 }
 .menu_desserts_title {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin: 0px;
-    margin-top: 3%;
-    margin-left: 3%;
-    width: auto;
-    overflow: hidden;
-    white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-top: 3%;
+  margin-left: 3%;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu_desserts_title-border {
-    background-color: #99e2d0;
-    height: 2px;
-    width: 40px;
+  background-color: #99e2d0;
+  height: 2px;
+  width: 40px;
 }
 .menu_desserts_repas {
-    background-color: #f5f5f5;
-    position: relative;
-    box-shadow: 0px 8px 8px #ebebeb;
-    width: 100%;
-    height: 70px;
-    margin-bottom: 20px;
-    list-style: none;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-    cursor: pointer;
+  background-color: #f5f5f5;
+  position: relative;
+  box-shadow: 0px 8px 8px #ebebeb;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 20px;
+  list-style: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
 }
+
+.menu_desserts_repas_titre {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .menu_desserts_repas_descrip {
-    display: flex;
-    flex-direction: column;
-    /*justify-content: space-between;*/
-    font-size: 14px;
-    /*height: 100%;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+  font-size: 14px;
+  /*height: 100%;
     width: 100%;*/
-    padding-left: 8px;
-    padding-bottom: 8px;
+  padding-left: 8px;
+  padding-bottom: 8px;
 }
 .menu_desserts_repas_descrip p {
-    width: auto;
-    margin: 0px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    white-space: nowrap;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
+  width: 200px;
+  margin: 0px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 ul {
-    padding: 0px;
+  padding: 0px;
 }
 .prix_dessert {
-    position: absolute;
-    right: 24px;
-    bottom: 10%;
-    font-weight: bold;
-    display: inline-block;
-    
+  position: absolute;
+  right: 24px;
+  bottom: 11.5%;
+  font-weight: bold;
+  display: inline-block;
 }
 
 /*BOUTON*/
 .menu_button {
-    margin: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  width: 60%;
+  height: 50px;
+  color: white;
+  background: linear-gradient($pinky, $periwinkle);
+  box-shadow: 1px 0 8px darkgray;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition-duration: 400ms;
+  transition-property: transform;
+}
+
+.menu_button:hover {
+  transform: scale(1.12);
+  background: linear-gradient(lighten($pinky, 4%), lighten($periwinkle, 4%));
+  box-shadow: 1px 0 8px black;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: $darkgrey;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /*padding: 5%;*/
+}
+
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-weight: lighter;
+  margin-left: 40px;
+  margin-bottom: -15px;
+}
+
+.bloc4_footer {
+  list-style: none;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 40px;
+  padding-bottom: 20px;
+}
+.bloc4_footer li {
+  margin-top: 10px;
+}
+.iconesli {
+  margin-right: 10px;
+}
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (min-width: 1025px) {
+  .retour {
+    left: 30em;
+  }
+  .menu {
+    padding-top: 80px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    align-content: space-between;
+  }
+  .menu_header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
     width: 90%;
-    height: 50px;
-    color: white;
-    background: linear-gradient($pinky, $periwinkle);
-    box-shadow: 1px 0 8px darkgray;
-    border-radius: 25px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    cursor: pointer;
-    transition-duration: 400ms;
-    transition-property: transform;
+    top: 0;
   }
-  
-  .menu_button:hover {
-    transform: scale(1.12);
-    background: linear-gradient(lighten($pinky, 4%), lighten($periwinkle, 4%));
-    box-shadow: 1px 0 8px black;
+  .menu_button {
+    position: absolute;
+    width: 24%;
+    bottom: -2%;
+    left: 39%;
   }
-  
-   /*FOOTER*/
+  .menu_plats_repas_descrip {
+    overflow: hidden;
+  }
+  .menu_desserts {
+    margin-bottom: 45px;
+    width: 30%;
+  }
+  .menu_plats {
+    margin-bottom: 45px;
+    width: 30%;
+  }
+  .menu_entrées {
+    margin-bottom: 45px;
+    width: 30%;
+  }
+}
 
-  footer {
-    background-color: $darkgrey;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding: 5%;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .menu_button {
+    width: 30%;
   }
-  
-  footer h2 {
-    font-family: "Shrikhand", cursive;
-    color: white;
-    font-weight: lighter;
-    margin-left: 40px;
-    margin-bottom: -15px;
-  }
-  
-  .bloc4_footer {
-    list-style: none;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding-bottom: 20px;
-  }
-  .bloc4_footer li {
-    margin-top: 10px;
-  }
-  .iconesli {
-    margin-right: 10px;
-  }
-  footer a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-  }
-
-  @media screen and (min-width: 1025px) {
-      .retour {
-          left: 30em;
-      }
-     .menu {
-         padding-top: 80px;
-         display: flex;
-         justify-content: space-between;
-         width: auto;
-         height: auto;
-         align-content: space-between;
-     } 
-     .menu_header {
-         display: flex;
-         justify-content: space-between;
-         position: absolute;
-         width: 90%;
-         top:0;
-     }
-     .menu_button {
-         position: absolute;
-         width: 24%;
-         bottom: -2%;
-         left: 39%;
-        }
-     .menu_plats_repas_descrip {
-         overflow: hidden;
-        }
-    }
+}

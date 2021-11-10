@@ -5,9 +5,23 @@
           animation: rotation 1.5s;
 }
 
-.menu_entrées_repas:hover .menu_entrée_repas_descrip {
-  height: 100%;
+.menu_entrées_repas:hover .menu_entrée_repas_descrip p {
   text-overflow: ellipsis;
+  width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu_plats_repas:hover .menu_plats_repas_descrip p {
+  text-overflow: ellipsis;
+  width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu_desserts_repas:hover .menu_desserts_repas_descrip p {
+  text-overflow: ellipsis;
+  width: 100px;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -178,6 +192,15 @@ li.menu_entrées_repas:nth-child(3) {
           animation: degre 1000ms;
   -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+li.menu_entrées_repas:nth-child(4) {
+  -webkit-animation: degre 1000ms;
+          animation: degre 1000ms;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
