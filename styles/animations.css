@@ -127,22 +127,22 @@
 }
 
 .menu_entrées_repas:hover .menu_entrées_repas_validate {
-  -webkit-animation: slide 1.2s;
-          animation: slide 1.2s;
+  -webkit-animation: slide 1s;
+          animation: slide 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 .menu_plats_repas:hover .menu_plats_repas_validate {
-  -webkit-animation: slide 1.2s;
-          animation: slide 1.2s;
+  -webkit-animation: slide 1s;
+          animation: slide 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 .menu_desserts_repas:hover .menu_desserts_repas_validate {
-  -webkit-animation: slide 1.2s;
-          animation: slide 1.2s;
+  -webkit-animation: slide 1s;
+          animation: slide 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }

@@ -145,7 +145,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  /*left: 6%;*/
+  margin-left: -4rem;
 }
 
 .bloc2_buttons ul .numbers_2 {
@@ -165,7 +165,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  left: 6%;
+  margin-left: -4.4rem;
 }
 
 .bloc2_buttons ul .numbers_3 {
@@ -185,7 +185,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  left: 6%;
+  margin-left: -4.2rem;
 }
 
 .bloc2_buttons ul .bloc2_button1 {
@@ -544,13 +544,13 @@ footer a {
     cursor: pointer;
   }
   .bloc2_buttons ul .numbers_1 {
-    /*left: 23.8%;*/
+    margin-left: -2.8rem;
   }
   .bloc2_buttons ul .numbers_2 {
-    left: 42.4%;
+    margin-left: -3.1rem;
   }
   .bloc2_buttons ul .numbers_3 {
-    left: 60.8%;
+    margin-left: -3.1rem;
   }
   .bloc3 {
     background-color: #f6f6f6;
@@ -678,13 +678,13 @@ footer a {
     background-color: #F5EDFF;
   }
   .bloc2_buttons ul .numbers_1 {
-    /*left: 9%;*/
+    margin-left: -12rem;
   }
   .bloc2_buttons ul .numbers_2 {
-    left: 9%;
+    margin-left: -12.4rem;
   }
   .bloc2_buttons ul .numbers_3 {
-    left: 9%;
+    margin-left: -12.2rem;
   }
   .bloc3 .bloc3_badge {
     right: 5%;

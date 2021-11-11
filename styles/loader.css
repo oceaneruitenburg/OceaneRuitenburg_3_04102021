@@ -9,8 +9,10 @@
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  top: 50%;
-  left: 31%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .loader > span {
@@ -61,22 +63,5 @@
   /*display: none;*/
   -webkit-transition: opacity  2s ease-in;
   transition: opacity  2s ease-in;
-}
-
-@media screen and (min-width: 1025px) {
-  .loader {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 47%;
-  }
 }
 /*# sourceMappingURL=loader.css.map */

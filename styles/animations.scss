@@ -13,9 +13,10 @@ $green: #99e2d0;
   right: -4rem;
 }
 @mixin slide {
-  animation: slide 1.2s;
+  animation: slide 1s;
   animation-fill-mode: forwards;
 }
+
 @mixin slideprice {
   animation: slide 1s;
   animation-fill-mode: forwards;
@@ -83,6 +84,7 @@ $green: #99e2d0;
   @include slide;
 }
 
+
 .menu_desserts_repas:hover .menu_desserts_repas_validate {
   @include slide;
 }
@@ -96,6 +98,7 @@ $green: #99e2d0;
     transform: translateX(-4rem);
   }
 }
+
 
 li.menu_entrées_repas:nth-child(1) {
   animation: degre 1000ms;
