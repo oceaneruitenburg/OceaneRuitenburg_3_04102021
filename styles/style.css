@@ -678,13 +678,13 @@ footer a {
     background-color: #F5EDFF;
   }
   .bloc2_buttons ul .numbers_1 {
-    margin-left: -12rem;
+    left: 4rem;
   }
   .bloc2_buttons ul .numbers_2 {
-    margin-left: -12.4rem;
+    left: 4rem;
   }
   .bloc2_buttons ul .numbers_3 {
-    margin-left: -12.2rem;
+    left: 4rem;
   }
   .bloc3 .bloc3_badge {
     right: 5%;

@@ -565,5 +565,13 @@ footer a {
   .menu_button {
     width: 30%;
   }
+  .menu_entrées_repas .menu_entrées_repas_titre {
+    text-overflow: inherit;
+  }
+  .menu_plats_repas_titre {
+    overflow: inherit;
+    white-space: nowrap;
+    text-overflow: inherit;
+  }
 }
 /*# sourceMappingURL=stylemenu.css.map */
