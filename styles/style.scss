@@ -98,7 +98,7 @@ header {
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 4.5%;;
+    margin-left: -4rem;
   }
   .numbers_2 {
     background-color: $periwinkle;
@@ -111,7 +111,7 @@ header {
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 4.5%;;
+    margin-left: -4.4rem;
   }
   .numbers_3 {
     background-color: $periwinkle;
@@ -124,7 +124,7 @@ header {
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 4.5%;;
+    margin-left: -4.2rem;
   }
 
   .bloc2_button1 {
@@ -241,8 +241,9 @@ header {
     align-items: center;
 
     .bloc3_carte {
+      position: relative;
       border-radius: 1rem;
-      width: 21rem;
+      width: 80%;
       background-color: white;
       box-shadow: 0 0 16px #d2d2d2;
       margin-top: 2rem;
@@ -288,9 +289,9 @@ header {
     .fa-stack-1x,
     .fa-stack-2x {
       width: inherit;
-      margin-left: 20rem;
+      /*margin-left: 20rem;*/
       cursor: pointer;
-      /*left: 12%;*/
+      left: 85%;
     }
 
     .bloc3_filledbtn {
@@ -386,13 +387,13 @@ footer a {
       cursor: pointer;
     }
     .numbers_1 {
-      left: 23.8%;
+      margin-left: -2.8rem;
     }
     .numbers_2 {
-      left: 42.4%;
+      margin-left: -3.1rem;
     }
     .numbers_3 {
-      left: 60.8%;
+      margin-left: -3.1rem;
     }
   }
 
@@ -506,18 +507,18 @@ footer a {
       }
     }
     .numbers_1 {
-      left: 9%;
+      left: 4rem;
     }
     .numbers_2 {
-      left: 9%;
+      left: 4rem;
     }
     .numbers_3 {
-      left: 9%;
+      left: 4rem;
     }
   }
   .bloc3 {
     .bloc3_badge {
-      right: 16%;
+      right: 5%;
     }
     .bloc3_cartes {
       .bloc3_carte {
@@ -525,10 +526,10 @@ footer a {
       }
       .fa-stack-1x,
       .fa-stack-2x {
-        margin-left: -20px;
+        /*margin-left: -20px;*/
         width: inherit;
         cursor: pointer;
-        left: 85%;
+        left: 88%;
       }
     }
   }

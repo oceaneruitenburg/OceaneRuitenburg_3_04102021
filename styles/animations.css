@@ -1,0 +1,287 @@
+@charset "UTF-8";
+/*PAGES CSS ANIMATIONS MENU*/
+.menu_entrées_repas:hover .menu_entrées_repas_validate i {
+  -webkit-animation: rotation 1.5s;
+          animation: rotation 1.5s;
+}
+
+.menu_entrées_repas:hover .menu_entrée_repas_descrip p {
+  text-overflow: ellipsis;
+  width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu_plats_repas:hover .menu_plats_repas_descrip p {
+  text-overflow: ellipsis;
+  width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu_desserts_repas:hover .menu_desserts_repas_descrip p {
+  text-overflow: ellipsis;
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu_entrées_repas:hover .prix_entrée {
+  -webkit-animation: slide 1s;
+          animation: slide 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.menu_plats_repas:hover .prix_plat {
+  -webkit-animation: slide 1s;
+          animation: slide 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.menu_desserts_repas:hover .prix_dessert {
+  -webkit-animation: slide 1s;
+          animation: slide 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(460deg);
+            transform: rotate(460deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(460deg);
+            transform: rotate(460deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+.menu_entrées_repas_validate {
+  background-color: #99e2d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+  color: white;
+  width: 60px;
+  font-size: 20px;
+  position: relative;
+  right: -4rem;
+}
+
+.menu_plats_repas_validate {
+  background-color: #99e2d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+  color: white;
+  width: 60px;
+  font-size: 20px;
+  position: relative;
+  right: -4rem;
+}
+
+.menu_desserts_repas_validate {
+  background-color: #99e2d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+  color: white;
+  width: 60px;
+  font-size: 20px;
+  position: relative;
+  right: -4rem;
+}
+
+.menu_entrées_repas:hover .menu_entrées_repas_validate {
+  -webkit-animation: slide 1s;
+          animation: slide 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.menu_plats_repas:hover .menu_plats_repas_validate {
+  -webkit-animation: slide 1s;
+          animation: slide 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.menu_desserts_repas:hover .menu_desserts_repas_validate {
+  -webkit-animation: slide 1s;
+          animation: slide 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(-4rem);
+            transform: translateX(-4rem);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(-4rem);
+            transform: translateX(-4rem);
+  }
+}
+
+li.menu_entrées_repas:nth-child(1) {
+  -webkit-animation: degre 1000ms;
+          animation: degre 1000ms;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+li.menu_entrées_repas:nth-child(2) {
+  -webkit-animation: degre 1000ms;
+          animation: degre 1000ms;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+li.menu_entrées_repas:nth-child(3) {
+  -webkit-animation: degre 1000ms;
+          animation: degre 1000ms;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+li.menu_entrées_repas:nth-child(4) {
+  -webkit-animation: degre 1000ms;
+          animation: degre 1000ms;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.menu_plats_repas:nth-child(1) {
+  -webkit-animation: degre 1000ms;
+          animation: degre 1000ms;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.menu_plats_repas:nth-child(2) {
+  -webkit-animation: degre 1000ms;
+          animation: degre 1000ms;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.menu_plats_repas:nth-child(3) {
+  -webkit-animation: degre 1000ms;
+          animation: degre 1000ms;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+li.menu_desserts_repas:nth-child(1) {
+  -webkit-animation: degre 1000ms;
+          animation: degre 1000ms;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+li.menu_desserts_repas:nth-child(2) {
+  -webkit-animation: degre 1000ms;
+          animation: degre 1000ms;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+li.menu_desserts_repas:nth-child(3) {
+  -webkit-animation: degre 1000ms;
+          animation: degre 1000ms;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes degre {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes degre {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=animations.css.map */
