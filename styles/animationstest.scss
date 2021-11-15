@@ -1,0 +1,17 @@
+$green: #99e2d0;
+@mixin validate {
+  background-color: $green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  color: white;
+  width: 60px;
+  font-size: 20px;
+  position: relative;
+  /*right: -4rem;*/
+}
+
+.menu_entrées_repas_validate::before {
+    @include validate;
+}
