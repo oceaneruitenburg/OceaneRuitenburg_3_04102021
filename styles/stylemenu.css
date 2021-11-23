@@ -547,12 +547,14 @@ footer a {
   }
 }
 
+/*tablettes*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .menu_button {
     width: 30%;
   }
   .menu_entrées_repas .menu_entrées_repas_titre {
     text-overflow: inherit;
+    overflow: inherit;
   }
   .menu_plats_repas_titre {
     overflow: inherit;
@@ -561,6 +563,10 @@ footer a {
   }
   .menu_desserts_repas_titre {
     overflow: inherit;
+  }
+  .menu_entrée_repas_descrip p {
+    overflow: inherit;
+    text-overflow: inherit;
   }
   .menu_desserts_repas_descrip p {
     overflow: inherit;
