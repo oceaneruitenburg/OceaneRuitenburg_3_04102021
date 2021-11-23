@@ -145,7 +145,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  margin-left: -4rem;
+  left: -10px;
 }
 
 .bloc2_buttons ul .numbers_2 {
@@ -165,7 +165,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  margin-left: -4.4rem;
+  left: -10px;
 }
 
 .bloc2_buttons ul .numbers_3 {
@@ -185,10 +185,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  margin-left: -4.2rem;
+  left: -10px;
+  /*margin-left: -4.2rem;*/
 }
 
 .bloc2_buttons ul .bloc2_button1 {
+  position: relative;
   width: 85%;
   margin-bottom: 13px;
   margin-top: 13px;
@@ -210,7 +212,7 @@ header {
 }
 
 .bloc2_buttons ul .bloc2_button1:hover {
-  background-color: #F5EDFF;
+  background-color: #f5edff;
 }
 
 .bloc2_buttons ul .bloc2_button1:hover .bloc2_buttonicon1 {
@@ -218,6 +220,7 @@ header {
 }
 
 .bloc2_buttons ul .bloc2_button2 {
+  position: relative;
   width: 85%;
   margin-bottom: 13px;
   margin-top: 13px;
@@ -239,7 +242,7 @@ header {
 }
 
 .bloc2_buttons ul .bloc2_button2:hover {
-  background-color: #F5EDFF;
+  background-color: #f5edff;
 }
 
 .bloc2_buttons ul .bloc2_button2:hover .bloc2_buttonicon2 {
@@ -247,6 +250,7 @@ header {
 }
 
 .bloc2_buttons ul .bloc2_button3 {
+  position: relative;
   width: 85%;
   margin-bottom: 13px;
   margin-top: 13px;
@@ -268,7 +272,7 @@ header {
 }
 
 .bloc2_buttons ul .bloc2_button3:hover {
-  background-color: #F5EDFF;
+  background-color: #f5edff;
 }
 
 .bloc2_buttons ul .bloc2_button3:hover .bloc2_buttonicon3 {
@@ -294,21 +298,18 @@ header {
 
 .bloc2_buttons ul .bloc2_buttonicon1 {
   color: #7c7c7c;
-  /*margin-right: 10px;*/
   width: 25px;
   height: 25px;
 }
 
 .bloc2_buttons ul .bloc2_buttonicon2 {
   color: #7c7c7c;
-  /*margin-right: 10px;*/
   width: 25px;
   height: 25px;
 }
 
 .bloc2_buttons ul .bloc2_buttonicon3 {
   color: #7c7c7c;
-  /*margin-right: 10px;*/
   width: 25px;
   height: 25px;
 }
@@ -419,7 +420,6 @@ header {
 .bloc3 .bloc3_cartes .fa-stack-1x,
 .bloc3 .bloc3_cartes .fa-stack-2x {
   width: inherit;
-  /*margin-left: 20rem;*/
   cursor: pointer;
   left: 85%;
 }
@@ -543,15 +543,6 @@ footer a {
     width: 26%;
     cursor: pointer;
   }
-  .bloc2_buttons ul .numbers_1 {
-    margin-left: -2.8rem;
-  }
-  .bloc2_buttons ul .numbers_2 {
-    margin-left: -3.1rem;
-  }
-  .bloc2_buttons ul .numbers_3 {
-    margin-left: -3.1rem;
-  }
   .bloc3 {
     background-color: #f6f6f6;
     padding-bottom: 60px;
@@ -639,7 +630,7 @@ footer a {
 }
 
 /*tablettes*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .bloc1_pres .bloc1_button {
     width: 30%;
     font-size: 17px;
@@ -648,8 +639,6 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /*flex-direction: row;
-    justify-content: space-around;*/
     padding: 5px;
   }
   .bloc2_buttons ul .bloc2_button1 {
@@ -658,7 +647,7 @@ footer a {
     font-size: 20px;
   }
   .bloc2_buttons ul .bloc2_button1:hover {
-    background-color: #F5EDFF;
+    background-color: #f5edff;
   }
   .bloc2_buttons ul .bloc2_button2 {
     width: 80%;
@@ -666,7 +655,7 @@ footer a {
     cursor: pointer;
   }
   .bloc2_buttons ul .bloc2_button2:hover .bloc2_buttonicon2 {
-    background-color: #F5EDFF;
+    background-color: #f5edff;
     color: #9356dc;
   }
   .bloc2_buttons ul .bloc2_button3 {
@@ -675,16 +664,7 @@ footer a {
     cursor: pointer;
   }
   .bloc2_buttons ul .bloc2_button3:hover {
-    background-color: #F5EDFF;
-  }
-  .bloc2_buttons ul .numbers_1 {
-    left: 4rem;
-  }
-  .bloc2_buttons ul .numbers_2 {
-    left: 4rem;
-  }
-  .bloc2_buttons ul .numbers_3 {
-    left: 4rem;
+    background-color: #f5edff;
   }
   .bloc3 .bloc3_badge {
     right: 5%;
@@ -694,12 +674,9 @@ footer a {
   }
   .bloc3 .bloc3_cartes .fa-stack-1x,
   .bloc3 .bloc3_cartes .fa-stack-2x {
-    /*margin-left: -20px;*/
     width: inherit;
     cursor: pointer;
     left: 88%;
   }
 }
-
-/*selecteur qui se met en erreur si je le met ?*/
 /*# sourceMappingURL=style.css.map */

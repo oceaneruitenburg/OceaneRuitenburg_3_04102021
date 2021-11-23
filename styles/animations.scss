@@ -26,6 +26,12 @@ $green: #99e2d0;
 .menu_entrées_repas:hover .menu_entrées_repas_validate i {
   animation: rotation 1.5s;
 }
+.menu_plats_repas:hover .menu_plats_repas_validate i {
+  animation: rotation 1.5s;
+}
+.menu_desserts_repas:hover .menu_desserts_repas_validate i {
+  animation: rotation 1.5s;
+}
 .menu_entrées_repas:hover .menu_entrée_repas_descrip p {
   text-overflow: ellipsis;
   width: 130px;
