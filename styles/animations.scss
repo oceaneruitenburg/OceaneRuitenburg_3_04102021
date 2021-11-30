@@ -87,22 +87,45 @@ $green: #99e2d0;
 .menu_entrées_repas:hover .menu_entrées_repas_validate {
   @include slide;
 }
+
+.menu_plats_repas .menu_plats_repas_validate {
+  /*transition: all 1s;*/
+  animation: slide_reverse 1s;
+}
+
 .menu_plats_repas:hover .menu_plats_repas_validate {
   @include slide;
+  right: 0;
 }
 
 .menu_desserts_repas:hover .menu_desserts_repas_validate {
   @include slide;
 }
 
+@keyframes slide_reverse {
+  100%{
+    transform: translateX(-4rem);
+  }
+  /* 0% {
+    transform: translateX(-4rem);
+  }
+
+  100% {
+    transform: translateX(0px);
+  } */
+}
+
 @keyframes slide {
-  0% {
+  100% {
+    transform: translateX(0);
+  }
+  /* 0% {
     transform: translateX(0px);
   }
 
   100% {
     transform: translateX(-4rem);
-  }
+  } */
 }
 
 li.menu_entrées_repas:nth-child(1) {
