@@ -9,10 +9,32 @@
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
+  background-color: white;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 999;
+  -webkit-animation: background 3s both;
+          animation: background 3s both;
+}
+
+@-webkit-keyframes background {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes background {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
 
 .loader > span {
@@ -57,8 +79,6 @@
 }
 
 .content {
-  opacity: 0;
-  /*display: none;*/
   -webkit-transition: opacity  2s ease-in;
   transition: opacity  2s ease-in;
 }

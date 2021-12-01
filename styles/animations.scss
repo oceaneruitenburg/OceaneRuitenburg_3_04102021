@@ -56,6 +56,7 @@ $green: #99e2d0;
 .menu_entrées_repas:hover .prix_entrée {
   @include slideprice;
 }
+
 .menu_plats_repas:hover .prix_plat {
   @include slideprice;
 }
@@ -63,6 +64,7 @@ $green: #99e2d0;
 .menu_desserts_repas:hover .prix_dessert {
   @include slideprice;
 }
+
 
 @keyframes rotation {
   0% {
@@ -84,15 +86,29 @@ $green: #99e2d0;
   @include validate;
 }
 
-.menu_entrées_repas:hover .menu_entrées_repas_validate {
-  @include slide;
+.menu_entrées_repas .menu_entrées_repas_validate {
+  transition: right 1s;
 }
+
+.menu_plats_repas .menu_plats_repas_validate {
+  transition: right 1s;
+}
+
+.menu_desserts_repas .menu_desserts_repas_validate {
+  transition: right 1s;
+}
+
+.menu_entrées_repas:hover .menu_entrées_repas_validate {
+  right: 0;
+}
+
+
 .menu_plats_repas:hover .menu_plats_repas_validate {
-  @include slide;
+  right: 0;
 }
 
 .menu_desserts_repas:hover .menu_desserts_repas_validate {
-  @include slide;
+  right: 0;
 }
 
 @keyframes slide {

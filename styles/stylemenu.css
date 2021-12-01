@@ -498,7 +498,7 @@ footer a {
 
 @media screen and (min-width: 1025px) {
   .retour {
-    left: 30em;
+    left: 480px;
   }
   .menu {
     padding-top: 80px;
