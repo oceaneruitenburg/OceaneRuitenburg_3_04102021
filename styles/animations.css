@@ -136,88 +136,53 @@
   right: -4rem;
 }
 
-.menu_entrées_repas:hover .menu_entrées_repas_validate {
-  -webkit-animation: slide 1s;
-          animation: slide 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+.menu_entrées_repas .menu_entrées_repas_validate {
+  -webkit-transition: right 1s;
+  transition: right 1s;
 }
 
 .menu_plats_repas .menu_plats_repas_validate {
-  /*transition: all 1s;*/
-  -webkit-animation: slide_reverse 1s;
-          animation: slide_reverse 1s;
+  -webkit-transition: right 1s;
+  transition: right 1s;
+}
+
+.menu_desserts_repas .menu_desserts_repas_validate {
+  -webkit-transition: right 1s;
+  transition: right 1s;
+}
+
+.menu_entrées_repas:hover .menu_entrées_repas_validate {
+  right: 0;
 }
 
 .menu_plats_repas:hover .menu_plats_repas_validate {
-  -webkit-animation: slide 1s;
-          animation: slide 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   right: 0;
 }
 
 .menu_desserts_repas:hover .menu_desserts_repas_validate {
-  -webkit-animation: slide 1s;
-          animation: slide 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes slide_reverse {
-  100% {
-    -webkit-transform: translateX(-4rem);
-            transform: translateX(-4rem);
-  }
-  /* 0% {
-    transform: translateX(-4rem);
-  }
-
-  100% {
-    transform: translateX(0px);
-  } */
-}
-
-@keyframes slide_reverse {
-  100% {
-    -webkit-transform: translateX(-4rem);
-            transform: translateX(-4rem);
-  }
-  /* 0% {
-    transform: translateX(-4rem);
-  }
-
-  100% {
-    transform: translateX(0px);
-  } */
+  right: 0;
 }
 
 @-webkit-keyframes slide {
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
-  /* 0% {
-    transform: translateX(0px);
-  }
-
   100% {
-    transform: translateX(-4rem);
-  } */
+    -webkit-transform: translateX(-4rem);
+            transform: translateX(-4rem);
+  }
 }
 
 @keyframes slide {
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
-  /* 0% {
-    transform: translateX(0px);
-  }
-
   100% {
-    transform: translateX(-4rem);
-  } */
+    -webkit-transform: translateX(-4rem);
+            transform: translateX(-4rem);
+  }
 }
 
 li.menu_entrées_repas:nth-child(1) {

@@ -3,12 +3,26 @@
     justify-content: center;
     align-items: center;
     position: fixed;
+    background-color: white;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+    z-index: 999;
+    animation: background 3s both;
 
 }
+
+@keyframes background {
+    0% {
+        visibility: visible;
+      }
+    
+      100% {
+        visibility: hidden;
+    }
+}
+
 .loader > span {
     display: inline-block;
     background-color: #9356dc;
@@ -38,8 +52,5 @@
 }
 
 .content {
-    opacity: 0;
-    /*display: none;*/
     transition: opacity  2s ease-in;
 }
-
